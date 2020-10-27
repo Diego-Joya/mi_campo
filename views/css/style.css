@@ -68,6 +68,31 @@
         color: white;
         background-color:  #078930;
     }
+    .register {
+        width: 50%;
+        height: 400px;
+        margin: auto;
+        text-align: center;
+    }
+    .register form{
+        margin-top: 100px;
+        display: block;
+    }
+    .register form h1{
+        margin-bottom: 35px;
+    }
+    .register form input{
+        width: 70%;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .register form input[type=submit]{
+        margin-top: 20px;
+        background-color: #078930;
+        font-weight: bold;
+        color: #fff;
+        font-size: 20px;
+    }
 
     @media(min-width:1024px){
         .nav{
@@ -103,3 +128,5 @@
     
             display: none;
         }
+        
+    }
