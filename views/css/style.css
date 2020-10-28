@@ -86,7 +86,7 @@
         height: 35px;
         border-radius: 5px;
     }
-    .register form input[type=submit]{
+    .register form input[type=button]{
         margin-top: 20px;
         background-color: #078930;
         font-weight: bold;
