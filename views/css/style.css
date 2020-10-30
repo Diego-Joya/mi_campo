@@ -5,11 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --color-header: #078930;
+}
+
 .header{
     position: fixed;
     width: 100%;
-    height: 150px;
-    background-color: #000;
+    height: 100px;
+    background-color: var(--color-header);
    
 }
 .contenedor{
@@ -17,13 +21,18 @@
     justify-content: space-between;
 }
 .img-logo{
-    width: 130px;
-    height: 130px;
-    margin: 15px;      
+    width: 95px;
+    height: 95px;
+    margin: 3px;  
+    margin-bottom: 2px; 
+    margin-left: 80px;  
+
+    border-radius: 50%;
 }
 .icon-menu{
     font-size: 40px;
     background: #078930;
+    color: white;
     width: 45px;
     height: 45px;
     text-align: center;
@@ -45,7 +54,9 @@
         width: 100%;
         transition: all 0.4s;
         height: 100vh;
+
     }
+
 
 .menu-ul{
     list-style: none;
@@ -57,8 +68,9 @@
         display: block;
         padding: 15px;
         color: #078930;
-        background-color: #000;
+        background-color: white;
         text-decoration: none;
+        border-radius: 200px,100px,100px,100px;
     }
     .mostrar{
         left: 0;
@@ -94,16 +106,22 @@
         font-size: 20px;
     }
 
+    section{
+        top: 150px;
+        position: relative;
+    }
+
     @media(min-width:1024px){
         .nav{
             position: fixed;
             float: right;
             display: flex;
             right: 15px;
-            top: 10px;
+            top: 25px;
             left: auto;
             width: auto;
             height: auto;
+            margin-right: 80px;
           
         }
     
@@ -112,6 +130,7 @@
             display: flex;
             flex-wrap: wrap;
             margin-right: 1px;
+
            
             
         }
@@ -123,7 +142,14 @@
          height: auto;
          margin:2px;
          font-weight: bold;
+         background: var(--color-header);
+         color: white;
         }
+        .menu-link:hover{
+            color: black;
+            font-size: 19px;
+        }
+        
         .icon-menu{
     
             display: none;
