@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,24 @@
     <link rel="stylesheet" href="views/css/fontello.css">
     <link rel="stylesheet" href="views/css/footer.css">
 </head>
+
 <body>
     <?php
-     include "views/modules/header.php";?>
-<section><?php
-    $mvc = new controller();
-    $mvc ->  enlacespaginascontroller();
-    ?></section>
+    include "views/modules/header.php"; ?>
+    <section>
+        <?php
+        $mvc = new controller();
+        $mvc->enlacespaginascontroller();
+        ?>
+    </section>
 
-<?php
-
-  
-    include "views/modules/footer.php";
-    ?>
+    <section>
+        <?php
+        include "views/modules/footer.php";
+        ?>
+    </section>
 
     <script src="views/js/animaciones.js"></script>
-    </body>
+</body>
+
 </html>
