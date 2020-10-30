@@ -1,8 +1,8 @@
 <?php
-class singup {
+class Singup {
 
-    public function singup_users(){
-        
+    public function singup_users($datos){
+        return $datos;
     }
 
 }

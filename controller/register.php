@@ -1,15 +1,20 @@
 <?php
+include '../models/singup.php';
 
 class Register
 {
+    public $datos;
 
-
-    public function controlRegister()
+    public function controlRegister($datos)
     {
-        return 'prebau';
+        $res = Singup::singup_users($datos);
+        echo $res;
     }
 }
-$a = new Register();
-if (isset($_POST["function"])) {
-    $a->controlRegister();
+$datos = ($_POST);
+foreach ($datos as $r) {
+    if (isset($r["function"]) && $r["function"] == "controlRegister") {
+        $a = new Register();
+        $a->controlRegister($datos);
+    }
 }
