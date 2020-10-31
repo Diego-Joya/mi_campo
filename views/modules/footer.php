@@ -1,5 +1,5 @@
     
-<footer>
+
     <div class="contenedor">
         <p>MI CAMPO...  MEJORANDO LA VIDA DE LOS PRODUCTORES &copy; 2020</p>
         <div class="sociales">
@@ -12,4 +12,3 @@
     
 
     </div>
-</footer>
