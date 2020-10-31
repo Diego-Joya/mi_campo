@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/fontello.css">
     <link rel="stylesheet" href="views/css/footer.css">
+    <link rel="stylesheet" href="views/css/banner.css">
 </head>
 
 <body>
     <?php
     include "views/modules/header.php"; ?>
-    <section>
+    <section class="cuerpo">
         <?php
         $mvc = new controller();
         $mvc->enlacespaginascontroller();
         ?>
-    </section>
-
-    <section>
+   <footer>
+    
         <?php
         include "views/modules/footer.php";
         ?>
-    </section>
-
+   
+</footer>
     <script src="views/js/animaciones.js"></script>
 </body>
 
