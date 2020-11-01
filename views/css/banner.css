@@ -15,18 +15,49 @@
         left: 50%;
         transform: translateY(-50%);
         transform: translateX(-50%);
-        
     }
     
-}
+
 #banner h1{
     color:rgb(20, 20, 20) ;
     text-shadow: 3px 3px 5px  #078930;
     font-size: 28px;
-    transition: step-start;
+
     
 }
+.parrafo1{
+    position: absolute;
+    color: white;
+    top: 98%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-30%);
+}
+.parrafo2{
+    text-align: justify;
+}
 
+.contenerdor2{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    text-align: justify;
+}
+.centrado{
+    text-align: center;
+    margin: auto;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.subtitulos{
+    color:#078930 ;
+    text-align: center;
+    margin-top: 12px;
+
+
+}
 
 @media (min-width:880px){
     #banner h1{
@@ -45,4 +76,9 @@
      margin-left: 0;
         height: auto;
         margin-top: -20%;
-       
+    }
+
+    #banner p{
+        margin-left: 5px;
+    }
+}
