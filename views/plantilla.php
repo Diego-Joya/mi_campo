@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="views/css/fontello.css">
     <link rel="stylesheet" href="views/css/footer.css">
     <link rel="stylesheet" href="views/css/banner.css">
+    <link rel="stylesheet" href="views/css/servicios.css">
 </head>
 
 <body>

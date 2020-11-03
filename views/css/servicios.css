@@ -1,0 +1,57 @@
+.slaider{
+    width: 100%;
+    height: 350px;
+    margin-top: -100px;
+    overflow: hidden;
+}
+
+.slaider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 10s infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+}
+
+.slaider li{
+    list-style: none;
+    overflow: hidden;
+    
+}
+.tamaño{
+    width: 100%;
+    margin-top: -15%;
+    margin-left: 0;
+    z-index: -100;
+  
+    
+}
+.posicion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    color:rgb(20, 20, 20) ;
+    text-shadow: 3px 3px 5px  #078930;
+    font-size: 28px;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+
+    35% { margin-left: -100%;}
+    66% { margin-left: -100%}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+    }
+
+    @media (min-width:880px){
+        .posicion{
+            font-size: 38px;
+        
+        }
+    
