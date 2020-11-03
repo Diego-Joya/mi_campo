@@ -79,7 +79,7 @@
 }
 .register {
   width: 80%;
-  height: 400px;
+  height: auto;
   margin: auto auto 100px;
   text-align: center;
 }
