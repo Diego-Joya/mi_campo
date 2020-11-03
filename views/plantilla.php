@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="views/css/footer.css">
     <link rel="stylesheet" href="views/css/banner.css">
     <link rel="stylesheet" href="views/css/servicios.css">
+    <link rel="stylesheet" href="views/css/inicio.css">
 </head>
 
 <body>

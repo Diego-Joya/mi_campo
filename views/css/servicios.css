@@ -33,8 +33,8 @@
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    color:rgb(20, 20, 20) ;
-    text-shadow: 3px 3px 5px  #078930;
+    color: white ;
+    text-shadow: 3px 3px 5px  black;
     font-size: 28px;
 }
 
@@ -54,4 +54,4 @@
             font-size: 38px;
         
         }
-    
+    }

@@ -10,7 +10,7 @@
             <li class="menu-lis"><a class="menu-link" href="services">Servicios</a></li>
             <li class="menu-lis"><a class="menu-link" href="contacto">Contactanos</a></li>
             <li class="menu-lis"><a class="menu-link" href="login">Ingresar</a></li>
-            <li class="menu-lis"><a class="menu-link" href="registrate  ">Resgistrate</a></li>
+            <li class="menu-lis"><a class="menu-link" href="registrate  ">Registrate</a></li>
             </ul>
             </nav>
         </div>
