@@ -1,7 +1,14 @@
 <?php
-class Singup {
+require '../models/connection.php';
 
-    public function singup_users($datos){
+class Singup extends connection{
+
+    public function singup_users($datos, $tabla){
+        $db = connection::connect();
+        $sql = "INSERT INTO $tabla ()";
+        $db->prepare(" ");
+
+
         return $datos;
     }
 

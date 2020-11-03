@@ -13,7 +13,7 @@ $("#register").click(function () {
       cache: false,
       success: function (res) {
         console.log(res);
-        alert(res);
-      },
+      }
     });
+    return;
   });

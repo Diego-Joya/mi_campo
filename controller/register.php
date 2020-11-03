@@ -7,7 +7,15 @@ class Register
 
     public function controlRegister($datos)
     {
-        $res = Singup::singup_users($datos);
+        if ($datos["perfil"] == "Productor") {
+            $tabla = "productores";
+        }else if($datos["perfil"] == "Comerciante"){
+            $tabla = "clientes";
+        }else if($datos["perfil"] == "Transportador"){
+            $tabla = "transportadores";
+        }
+        $res = Singup::singup_users($datos, $tabla);
+        
         echo $res;
     }
 }
