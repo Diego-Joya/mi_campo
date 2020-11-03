@@ -4,11 +4,24 @@
         <div class="form_registro">
             <div class="information_user">
                 <label for="">Nombres</label><br>
-                <input type="text" name="nombres" id=""  require><br><br>
+                <input type="text" name="nombres" id="" require><br><br>
                 <label for="">Apellidos</label><br>
                 <input type="text" name="apellidos" id="" require><br><br>
+                <label for="">Tipo indentificación</label><br>
+                <select name="tipo" id="tipo" form="tipo" require>
+                    <option value="">Seleccione</option>
+                    <option value="Cedula">Cedula</option>
+                    <option value="Nit">Nit</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select><br><br>
                 <label for="">N° Documento</label><br>
                 <input type="text" name="documento" id="" require><br><br>
+                <label for="">Genero</label><br>
+                <select name="genero" id="genero" form="genero" require>
+                    <option value="">Seleccione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select><br><br>
                 <label for="">Celular</label><br>
                 <input type="text" name="celular" id=""><br><br>
                 <label for="">Email</label><br>
@@ -16,7 +29,7 @@
             </div>
             <div class="security_user">
                 <label for="">Perfil</label><br>
-                <select name="perfil" id="perfil" form="carform" require>
+                <select name="perfil" id="perfil" form="perfil" require>
                     <option value="">Seleccione</option>
                     <option value="Productor">Productor</option>
                     <option value="Comerciante">Comerciante</option>
@@ -33,5 +46,3 @@
         <input type="button" id="register" value="Registrarme">
     </form>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="../ajax/ajax.js"></script>
