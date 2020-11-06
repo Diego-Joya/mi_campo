@@ -15,7 +15,7 @@ class Singup extends connection{
         $db->bindParam(":no_documento", $datos["documento"], PDO::PARAM_STR);
         $db->bindParam(":email", $datos["email"], PDO::PARAM_STR);
         if (!$db->execute()) {
-            var_dump($db->errorInfo());
+            // var_dump($db->errorInfo());
             return "error al guardar ";
         }
         // return $db->fetch();
