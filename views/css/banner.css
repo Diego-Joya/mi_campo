@@ -11,7 +11,7 @@
     
     #banner .contenedor{
         position: absolute;
-        top: 50%;
+        top: 18%;
         left: 50%;
         transform: translateY(-50%);
         transform: translateX(-50%);
@@ -19,8 +19,8 @@
     
 
 #banner h1{
-    color:rgb(20, 20, 20) ;
-    text-shadow: 3px 3px 5px  #078930;
+    color:white;
+    text-shadow: 3px 3px 5px  black;
     font-size: 28px;
 
     
@@ -35,6 +35,8 @@
 }
 .parrafo2{
     text-align: justify;
+    margin-top: 10px;
+    
 }
 
 .contenerdor2{

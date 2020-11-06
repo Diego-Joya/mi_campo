@@ -2,7 +2,7 @@
           <img src="views/imagenes/somos.jpg" alt="">
           <div class="contenedor">
           <h1>SOMOS TU APOYO </h1> 
-          <P class="parrafo1">Te ayudamos en la venta de tus productos</P>
+       
           </div>
       </section>
 
