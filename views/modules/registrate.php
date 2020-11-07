@@ -4,43 +4,76 @@
         <div class="form_registro">
             <div class="information_user">
                 <label for="">Nombres</label><br>
-                <input type="text" name="nombres" id="" require><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">person</i></div>
+                    <input type="text" name="nombres" id="" require>
+                </div><br>
                 <label for="">Apellidos</label><br>
-                <input type="text" name="apellidos" id="" require><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">person</i></div>
+                    <input type="text" name="apellidos" id="" require>
+                </div><br>
                 <label for="">Tipo indentificación</label><br>
-                <select name="tipo" id="tipo" form="tipo" require>
-                    <option value="">Seleccione</option>
-                    <option value="Cedula">Cedula</option>
-                    <option value="Nit">Nit</option>
-                    <option value="Pasaporte">Pasaporte</option>
-                </select><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">list</i></div>
+                    <select name="tipo" id="tipo" form="tipo" require>
+                        <option value="">Seleccione</option>
+                        <option value="Cedula">Cedula</option>
+                        <option value="Nit">Nit</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                </div><br>
                 <label for="">N° Documento</label><br>
-                <input type="text" name="documento" id="" require><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">picture_in_picture</i></div>
+                    <input type="text" name="documento" id="" require>
+                </div>
                 <label for="">Genero</label><br>
-                <select name="genero" id="genero" form="genero" require>
-                    <option value="">Seleccione</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                </select><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">list</i></div>
+                    <select name="genero" id="genero" form="genero" require>
+                        <option value="">Seleccione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </div><br>
                 <label for="">Celular</label><br>
-                <input type="text" name="celular" id=""><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">phone_iphone</i></div>
+                    <input type="text" name="celular" id=""><br><br>
+                </div><br>
                 <label for="">Email</label><br>
-                <input type="text" name="email" id=""><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">mail</i></div>
+                    <input type="text" name="email" id=""><br>
+                </div><br>
             </div>
             <div class="security_user">
                 <label for="">Perfil</label><br>
-                <select name="perfil" id="perfil" form="perfil" require>
-                    <option value="">Seleccione</option>
-                    <option value="Productor">Productor</option>
-                    <option value="Comerciante">Comerciante</option>
-                    <option value="Transportador">Transportador</option>
-                </select><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">list</i></div>
+                    <select name="perfil" id="perfil" form="perfil" require>
+                        <option value="">Seleccione</option>
+                        <option value="Productor">Productor</option>
+                        <option value="Comerciante">Comerciante</option>
+                        <option value="Transportador">Transportador</option>
+                    </select>
+                </div><br>
                 <label for="">Usuario</label><br>
-                <input type="text" name="usuario" id="" require><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">account_circle</i></div>
+                    <input type="text" name="usuario" id="" require><br><br>
+                </div><br>
                 <label for="">Contraseña</label><br>
-                <input type="password" name="password" id="" require><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">lock</i></div>
+                    <input type="password" name="password" id="" require><br><br>
+                </div><br>
                 <label for="">Confirmar contraseña</label><br>
-                <input type="password" name="repeat_password" id="" require><br><br>
+                <div class="icon-input">
+                    <div class="icon"><i class="material-icons">lock</i></div>
+                    <input type="password" name="repeat_password" id="" require><br><br>
+                </div><br>
             </div>
         </div>
         <input type="button" id="register" value="Registrarme">

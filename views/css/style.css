@@ -81,7 +81,10 @@
   width: 80%;
   height: auto;
   margin: auto auto 100px;
-  text-align: center;
+  text-align: left;
+  box-shadow: 5px;
+  background-color: #eee;
+  padding: 10px;
 }
 .form_registro {
   display: flex;
@@ -91,8 +94,26 @@
 .information_user, .security_user{
     width: 50%;
 }
+.icon-input {
+  display: flex;
+  justify-content: flex-start;
+}
+.icon-input .icon{
+  margin: 0;
+  padding: 0;
+}
+.icon-input .input{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 .register form {
   display: block;
+}
+form i.material-icons {
+  background: #6fbb5e;
+  color: #fff;
+  font-size: 30px;
 }
 .register form h1 {
   margin-bottom: 35px;

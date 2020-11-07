@@ -28,7 +28,6 @@ $("#register").click(function () {
       console.log(res)
       if (res == "true") {
         Swal.fire({
-          position: "top-end",
           icon: "success",
           title: "Datos guardados correctamente",
           showConfirmButton: false,

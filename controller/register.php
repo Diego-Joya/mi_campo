@@ -7,6 +7,9 @@ class Register
 
     public function controlRegister($datos)
     {
+        if (isset($datos["password"])) {
+            $datos["password"] = md5($datos["password"]);
+        }
         if ($datos["perfil"] == "Productor") {
             $tabla = "productores";
         } else if ($datos["perfil"] == "Comerciante") {
