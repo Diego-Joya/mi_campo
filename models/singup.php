@@ -1,10 +1,11 @@
 <?php
 require '../models/connection.php';
 
-class Singup extends connection{
+class Singup extends connection
+{
 
-    public function singup_users($datos, $tabla){
-        var_dump($datos);
+    public function singup_users($datos, $tabla)
+    {
         $sql = "INSERT INTO $tabla (nombre,apellidos,celular,genero,tipo_identificacion,no_documento,email) VALUES (:nombre,:apellidos,:celular,:genero,:tipo_identificacion,:no_documento,:email)";
         $db = connection::connect()->prepare($sql);
         $db->bindParam(":nombre", $datos["nombres"], PDO::PARAM_STR);
@@ -16,10 +17,28 @@ class Singup extends connection{
         $db->bindParam(":email", $datos["email"], PDO::PARAM_STR);
         if (!$db->execute()) {
             // var_dump($db->errorInfo());
-            return "error al guardar ";
+            return "false";
         }
+        if(isset($datos["usuario"])){
+            $sql = "INSERT INTO usuarios (nombre,apellidos,celular,fecha,usuario,password,email,perfil) VALUES (:nombre,:apellidos,:celular,:genero,:tipo_identificacion,:no_documento,:email)";
+            $db = connection::connect()->prepare($sql);
+            $db->bindParam(":nombre", $datos["nombres"], PDO::PARAM_STR);
+            $db->bindParam(":apellidos", $datos["apellidos"], PDO::PARAM_STR);
+            $db->bindParam(":fecha", date('Y-m.-d'));
+            $db->bindParam(":celular", $datos["celular"], PDO::PARAM_STR);
+            $db->bindParam(":email", $datos["email"], PDO::PARAM_STR);
+            $db->bindParam(":usuario", $datos["usuario"], PDO::PARAM_STR);
+            $db->bindParam(":password", $datos["password"], PDO::PARAM_STR);
+            $db->bindParam(":perfil", $datos["perfil"], PDO::PARAM_STR);
+            if (!$db->execute()) {
+                // var_dump($db->errorInfo());
+                return "false";
+            }
+
+        }
+
         // return $db->fetch();
-        return "Datos guardados correctamente";
+        return "true";
         // $db->close();
     }
 }

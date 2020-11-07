@@ -19,14 +19,31 @@ $("#register").click(function () {
   dat.name = "genero";
   dat.value = genero;
   datos.push(dat);
-  console.log(datos);
   $.ajax({
     url: "controller/register.php",
     type: "POST",
     data: datos,
     cache: false,
     success: function (res) {
-      console.log(res);
+      console.log(res)
+      if (res == "true") {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Datos guardados correctamente",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }else{
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Error al guardar',
+          showConfirmButton: false,
+          footer: '',
+          timer: 1500,
+        })
+      }
     },
   });
 });
