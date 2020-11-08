@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="views/css/banner.css">
     <link rel="stylesheet" href="views/css/servicios.css">
     <link rel="stylesheet" href="views/css/inicio.css">
+    <link rel="stylesheet" href="views/css/login.css">
+    <link rel="stylesheet" href="views/css/contactenos.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
