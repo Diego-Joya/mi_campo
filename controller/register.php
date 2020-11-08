@@ -18,12 +18,27 @@ class Register
             $tabla = "transportadores";
         }
         $res = Singup::singup_users($datos, $tabla);
-
+        echo $res;
+    }
+    public function loadProfiles($datos){
+        $res = Singup::loadProfiles($datos);
+        echo $res;
+    }
+    public function validateUsers($datos){
+        $res = Singup::validateUsers($datos);
         echo $res;
     }
 }
-$datos = ($_POST);
+$datos = $_POST;
 if (isset($datos["function"]) && $datos["function"] == "controlRegister") {
     $a = new Register();
     $a->controlRegister($datos);
+}
+if (isset($datos["function"]) && $datos["function"] == "loadProfiles") {
+    $a = new Register();
+    $a->loadProfiles($datos);
+}
+if (isset($datos["function"]) && $datos["function"] == "validateUsers") {
+    $a = new Register();
+    $a->validateUsers($datos);
 }

@@ -11,7 +11,6 @@ class Singup extends connection
             $sql = "INSERT INTO usuarios (fecha,nombre,apellidos,celular,usuario,password,email,perfil)
                  VALUES (:fecha,:nombre,:apellidos,:celular,:usuario,:password,:email,:perfil)";
             $db = connection::connect()->prepare($sql);
-            $perfil = 1;
             $db->bindParam(":fecha", $fecha);
             $db->bindParam(":nombre", $datos["nombres"], PDO::PARAM_STR);
             $db->bindParam(":apellidos", $datos["apellidos"], PDO::PARAM_STR);
@@ -19,8 +18,7 @@ class Singup extends connection
             $db->bindParam(":email", $datos["email"], PDO::PARAM_STR);
             $db->bindParam(":usuario", $datos["usuario"], PDO::PARAM_STR);
             $db->bindParam(":password", $datos["password"], PDO::PARAM_STR);
-            $db->bindParam(":perfil", $perfil, PDO::PARAM_INT);
-            // $db->bindParam(":perfil", $datos["perfil"], PDO::PARAM_STR);
+            $db->bindParam(":perfil", $datos["perfil"], PDO::PARAM_STR);
             if (!$db->execute()) {
                 // var_dump($db->errorInfo());
                 return "false";
@@ -50,8 +48,27 @@ class Singup extends connection
             // var_dump($db->errorInfo());
             return "false";
         }
-
+        
         return "true";
         // $db->close();
+    }
+    public function loadProfiles($dato){
+        $db = connection::connect()->prepare("select * from  perfiles");
+        if (!$db->execute()) {
+            // var_dump($db->errorInfo());
+            return "false";
+        }
+        $res = $db->fetchAll();
+        return json_encode($res);
+    }
+    public function validateUsers($p){
+        $db = connection::connect()->prepare("select * from  usuarios where usuario=:usuario");
+        $db->bindParam(":usuario", $p["usuario"], PDO::PARAM_STR);
+        if (!$db->execute()) {
+            // var_dump($db->errorInfo());
+            return "false";
+        }
+        $res = $db->fetch();
+        return json_encode($res);
     }
 }
