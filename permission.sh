@@ -1,3 +1,3 @@
-find  -exec  chmod 777 {} \;
-
+ find  -exec  chmod 777 {} \;
+ find
 
