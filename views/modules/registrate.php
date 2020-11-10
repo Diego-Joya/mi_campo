@@ -52,7 +52,7 @@
                 <label for="">Perfil</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">list</i></div>
-                    <select name="perfil" id="perfil" form="perfil" required>
+                    <select name="perfil" id="perfil" form="perfil" require>
                         <option value="">Seleccione</option>
                     </select>
                 </div><br>

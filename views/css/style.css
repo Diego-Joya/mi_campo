@@ -86,6 +86,7 @@
   box-shadow: 5px;
   background-color: #eee;
   padding: 10px;
+  border: 1px solid #078930;
 }
 .form_registro {
   display: block;
@@ -98,7 +99,7 @@
 .icon-input {
   display: flex;
   justify-content: flex-start;
-  margin: 10px 0;
+  margin: 10px ;
   font-size: 20px;
 }
 .icon-input .icon{
@@ -122,9 +123,8 @@ form i.material-icons {
   margin-bottom: 35px;
 }
 .register form input {
-  width: 70%;
+  width: 60%;
   height: 30px;
-  border-radius: 0px;
   padding: 10px;
 }
 .register form input[type="button"] {
@@ -187,5 +187,9 @@ form i.material-icons {
 
   .icon-menu {
     display: none;
+  }
+  .register form input {
+    width: 100%;
+
   }
 }
