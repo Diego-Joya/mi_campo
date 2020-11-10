@@ -30,17 +30,21 @@
     color: white;
     top: 98%;
     left: 50%;
+    letter-spacing: 5.5px;
     transform: translateY(-50%);
     transform: translateX(-30%);
 }
 .parrafo2{
     text-align: justify;
     margin-top: 10px;
+    letter-spacing: 0,6px;
+    
+    
     
 }
 
 .contenerdor2{
-    width: 90%;
+    width: 85%;
     margin: auto;
     margin-top: 10px;
     position: relative;
