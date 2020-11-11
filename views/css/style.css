@@ -79,15 +79,17 @@
 }
 .register {
   width: 80%;
+  max-width: 900px;
   height: auto;
   margin: auto auto 100px;
   text-align: left;
   box-shadow: 5px;
   background-color: #eee;
   padding: 10px;
+  border: 1px solid #078930;
 }
 .form_registro {
-  display: flex;
+  display: block;
   width: 80%;
   margin: auto;
 }
@@ -97,6 +99,8 @@
 .icon-input {
   display: flex;
   justify-content: flex-start;
+  margin: 10px ;
+  font-size: 20px;
 }
 .icon-input .icon{
   margin: 0;
@@ -119,16 +123,20 @@ form i.material-icons {
   margin-bottom: 35px;
 }
 .register form input {
-  width: 70%;
+  width: 60%;
   height: 30px;
-  border-radius: 0px;
+  padding: 10px;
 }
 .register form input[type="button"] {
   margin-top: 20px;
-  background-color: #078930;
+  background: linear-gradient(#ffda63, #078930);
+    border: 0;
   font-weight: bold;
   color: #fff;
   font-size: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  
 }
 
 .cuerpo {
@@ -137,6 +145,8 @@ form i.material-icons {
 }
 
 @media (min-width: 1024px) {
+  .form_registro{
+    display: flex;}
   .img-logo {
     margin-left: 80px;
   }
@@ -177,5 +187,9 @@ form i.material-icons {
 
   .icon-menu {
     display: none;
+  }
+  .register form input {
+    width: 100%;
+
   }
 }
