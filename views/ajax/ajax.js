@@ -80,6 +80,8 @@ $("#perfil").ready(function (e) {
   });
 });
 
+//valida la existencia de un usuario
+
 $("#usuario").focusout(function (e) {
   var user = document.querySelector("#usuario").value;
   var dat = [
@@ -111,6 +113,8 @@ $("#usuario").focusout(function (e) {
     },
   });
 });
+
+//valida campos requeridos
 
 function validateFields(fields) {
   fields.forEach(function (f) {
