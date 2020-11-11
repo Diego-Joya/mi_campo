@@ -1,9 +1,4 @@
-<div class="header">
-    <div class="contenedor">
-    <img class = "img-logo" src="views/imagenes/logo.jpeg" alt="">
-    <span class="icon-menu" id="btn-menu"></span>
-   
-        <nav class = "nav" id="nav">
+<nav class = "nav" id="nav">
         <ul class="menu-ul"> 
             <li class="menu-lis"><a class="menu-link" href="index.php">Inicio</a></li>
             <li class="menu-lis"><a class="menu-link" href="somos">Quienes somos</a></li>
@@ -14,5 +9,3 @@
             </ul>
             </nav>
         </div>
-</div>
-<
