@@ -14,7 +14,7 @@
             <input type="text" name="usuario" id="" placeholder="&#128100; escriba su usuario" require><br><br>
             <label for="">Contraseña</label><br>
             <input type="password" name="password" id="" placeholder="&#128272; escriba su contraseña" require><br><br>
-            <input type="submit" id="register" value="INGRESAR">
+            <input type="submit" id="send" value="INGRESAR">
 
     </form>
 </div>

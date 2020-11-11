@@ -17,6 +17,8 @@
 </head>
 
 <body>
+<?php
+    include "views/modules/navegacioni.php"; ?>
     <?php
     include "views/modules/header.php"; ?>
     <section class="cuerpo">

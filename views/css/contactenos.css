@@ -1,0 +1,41 @@
+.contactenos{
+    margin-top: 375px;
+    margin: auto;
+    width: 70%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #078930;
+}
+.contactenos h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #078930;
+}
+.contactenos input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.contactenos textarea{
+    width: 100%;
+}
+
+.contactenos input[type="submit"]{
+    background: linear-gradient(#ffda63, #078930);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+    
+}
+
+@media (max-width:480px){
+    .login{
+        width: 98%;
+    }
+}
