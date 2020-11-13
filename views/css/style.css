@@ -86,6 +86,7 @@
   box-shadow: 5px;
   background-color: #eee;
   padding: 10px;
+  border: 1px solid #078930;  
 }
 
 .form_registro {
