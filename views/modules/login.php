@@ -5,11 +5,8 @@
         <div class="selec"><i class="material-icons">list</i>
             <select name="perfil" id="perfil" form="perfil" require>
                 <option value="">Seleccione</option>
-                <option value="Productor">Productor</option>
-                <option value="Comerciante">Comerciante</option>
-                <option value="Transportador">Transportador</option>
-            </select></div>
-
+            </select>
+        </div>
         <label for="">Usuario</label><br>
         <input type="text" name="usuario" id="" placeholder="&#128100; escriba su usuario" require><br><br>
         <label for="">Contraseña</label><br>
