@@ -54,6 +54,9 @@
                     <div class="icon"><i class="material-icons">list</i></div>
                     <select name="perfil" id="perfil" form="perfil" require>
                         <option value="">Seleccione</option>
+                        <option value="Productor">Productor</option>
+                        <option value="Comerciante">Comerciante</option>
+                        <option value="Transportador">Transportador</option>
                     </select>
                 </div><br>
                 <label for="">Usuario</label><br>

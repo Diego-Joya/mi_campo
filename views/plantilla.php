@@ -20,7 +20,7 @@
 
     <?php
     include "views/modules/header.php"; 
-   ;?>
+   ?>
     
     <section class="cuerpo">
         <?php
