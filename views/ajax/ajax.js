@@ -128,6 +128,7 @@ function validateFields(fields, callback) {
       $("#" + f.name).after(msg);
     }
   });
+
   if (count > 0) {
     return;
   }else{
