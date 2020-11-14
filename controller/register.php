@@ -10,11 +10,11 @@ class Register
         if (isset($datos["password"])) {
             $datos["password"] = md5($datos["password"]);
         }
-        if ($datos["perfil"] == "Productor") {
+        if ($datos["perfil"] == "1") {
             $tabla = "productores";
-        } else if ($datos["perfil"] == "Comerciante") {
+        } else if ($datos["perfil"] == "2") {
             $tabla = "clientes";
-        } else if ($datos["perfil"] == "Transportador") {
+        } else if ($datos["perfil"] == "3") {
             $tabla = "transportadores";
         }
         $res = Singup::singup_users($datos, $tabla);
@@ -29,7 +29,7 @@ class Register
         echo $res;
     }
 }
-$datos = $_POST;
+$datos = $_POST;    
 if (isset($datos["function"]) && $datos["function"] == "controlRegister") {
     $a = new Register();
     $a->controlRegister($datos);

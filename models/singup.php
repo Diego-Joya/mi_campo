@@ -20,14 +20,14 @@ class Singup extends connection
             $db->bindParam(":password", $datos["password"], PDO::PARAM_STR);
             $db->bindParam(":perfil", $datos["perfil"], PDO::PARAM_STR);
             if (!$db->execute()) {
-                // var_dump($db->errorInfo());
+                var_dump($db->errorInfo());
                 return "false";
             }
             $sql = "select id from usuarios where usuario=:usuario";
             $db = connection::connect()->prepare($sql);
             $db->bindParam(":usuario", $datos["usuario"], PDO::PARAM_STR);
             if (!$db->execute()) {
-                // var_dump($db->errorInfo());
+                var_dump($db->errorInfo());
                 return "false";
             }
             $usr = $db->fetch();
@@ -45,14 +45,15 @@ class Singup extends connection
         $db->bindParam(":email", $datos["email"], PDO::PARAM_STR);
         $db->bindParam(":id_usuario", $usr["id"], PDO::PARAM_INT);
         if (!$db->execute()) {
-            // var_dump($db->errorInfo());
+            var_dump($db->errorInfo());
             return "false";
         }
-        
+
         return "true";
         // $db->close();
     }
-    public function loadProfiles($dato){
+    public function loadProfiles($dato)
+    {
         $db = connection::connect()->prepare("select * from  perfiles");
         if (!$db->execute()) {
             // var_dump($db->errorInfo());
@@ -61,7 +62,8 @@ class Singup extends connection
         $res = $db->fetchAll();
         return json_encode($res);
     }
-    public function validateUsers($p){
+    public function validateUsers($p)
+    {
         $db = connection::connect()->prepare("select * from  usuarios where usuario=:usuario");
         $db->bindParam(":usuario", $p["usuario"], PDO::PARAM_STR);
         if (!$db->execute()) {
@@ -69,6 +71,10 @@ class Singup extends connection
             return "false";
         }
         $res = $db->fetch();
-        return json_encode($res);
+        if (!empty($res)) {
+            return json_encode($res);
+        } else {
+            return "false";
+        }
     }
 }

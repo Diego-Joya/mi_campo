@@ -116,15 +116,21 @@ $("#usuario").focusout(function (e) {
 
 //valida campos requeridos
 
-function validateFields(fields) {
+function validateFields(fields, callback) {
+  var count = 0;
   fields.forEach(function (f) {
-    console.log(f);
     if (f.value.length == 0 && f.value != "function") {
+      count++;
       var msg = document.createElement("span");
       msg.innerHTML = "";
       msg.style = "font-size: 25px; color: red;";
-      $("#"+f.name).css("cssText", "border-color: red;");
-      $("#"+f.name).after(msg);
+      $("#" + f.name).css("cssText", "border-color: red;");
+      $("#" + f.name).after(msg);
     }
   });
+  if (count > 0) {
+    return;
+  }else{
+    callback(true);
+  }
 }
