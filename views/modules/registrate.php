@@ -6,12 +6,12 @@
                 <label for="">Nombres</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">person</i></div>
-                    <input type="text" name="nombres" id="nombres" required>
+                    <input type="text" name="nombres" id="nombres" placeholder="Nombres" required>
                 </div><br>
                 <label for="">Apellidos</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">person</i></div>
-                    <input type="text" name="apellidos" id="apellidos" required>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
                 </div><br>
                 <label for="">Tipo indentificación</label><br>
                 <div class="icon-input">
@@ -26,7 +26,7 @@
                 <label for="">N° Documento</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">picture_in_picture</i></div>
-                    <input type="text" name="documento" id="documento" required>
+                    <input type="text" name="documento" id="documento" placeholder="No Documento" required>
                 </div><br>
                 <label for="">Genero</label><br>
                 <div class="icon-input">
@@ -40,12 +40,12 @@
                 <label for="">Celular</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">phone_iphone</i></div>
-                    <input type="text" name="celular" id="celular"><br><br>
+                    <input type="text" name="celular" id="celular" placeholder="Celular"><br><br>
                 </div><br>
                 <label for="">Email</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">mail</i></div>
-                    <input type="text" name="email" id="email" required><br>
+                    <input type="text" name="email" id="email" placeholder="Email"required><br>
                 </div><br>
             </div>
             <div class="security_user">
@@ -59,17 +59,17 @@
                 <label for="">Usuario</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">account_circle</i></div>
-                    <input type="text" name="usuario" id="usuario" required><br><br>
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuario" required><br><br>
                 </div><br>
                 <label for="">Contraseña</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">lock</i></div>
-                    <input type="password" name="password" id="password" required><br><br>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required><br><br>
                 </div><br>
                 <label for="">Confirmar contraseña</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">lock</i></div>
-                    <input type="password" name="repeat_password" id="repeat_password" required><br><br>
+                    <input type="password" name="repeat_password" id="repeat_password" placeholder="Confirmar contraseña" required><br><br>
                 </div><br>
             </div>
         </div>
