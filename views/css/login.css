@@ -21,7 +21,7 @@
 
 }
 
-.login input[type="submit"]{
+.login input[type="button"]{
     background: linear-gradient(#ffda63, #078930);
     border: 0;
     color: white;

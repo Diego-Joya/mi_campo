@@ -12,6 +12,9 @@
         else if( $enlacesmodel == "index.php"){ 
             $module = "views/modules/inicio.php";
         }
+        else if( $enlacesmodel == "inicio"){ 
+            $module = "views/modules/inicio.php";
+        }
         else{
             $module = "views/modules/inicio.php";
         }

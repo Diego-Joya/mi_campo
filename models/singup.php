@@ -71,8 +71,9 @@ class Singup extends connection
             return "false";
         }
         $res = $db->fetch();
-        if (!empty($res)) {
+        if (!empty($res)) { 
             return json_encode($res);
+            
         } else {
             return "false";
         }

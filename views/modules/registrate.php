@@ -1,9 +1,9 @@
 <div class="register">
-    <form id="registro" action="" method="POST">
+    <form id="registro" action="" method="POST" onsubmit="validarre">
         <h1>Registrese</h1>
         <div class="form_registro">
             <div class="information_user">
-                <label for="">Nombres</label><br>
+                <label for="nombresS">Nombres</label><br>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">person</i></div>
                     <input type="text" name="nombres" id="nombres" placeholder="Nombres" required>
