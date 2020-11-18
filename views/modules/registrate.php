@@ -73,6 +73,8 @@
                 </div><br>
             </div>
         </div>
-        <input type="button" id="register" value="Registrarme">
+        <div class="button_register">
+            <input type="button" id="register" value="Registrarme">
+        </div>
     </form>
 </div>

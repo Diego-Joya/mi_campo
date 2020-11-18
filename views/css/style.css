@@ -121,6 +121,7 @@ form i.material-icons {
   font-size: 30px;
 }
 .register form h1 {
+  text-align: center;
   margin-bottom: 35px;
 }
 .register form input {
@@ -138,6 +139,11 @@ form i.material-icons {
   font-size: 20px;
   cursor: pointer;
   border-radius: 20px;
+  padding: 5px;
+}
+.button_register{
+  margin: 0 auto;
+  text-align: center;
 }
 
 .cuerpo {
@@ -145,11 +151,11 @@ form i.material-icons {
   position: relative;
 }
 
+
 @media (min-width: 1024px) {
   .register{
     display: block;
     width: 100%;
-    text-align: center;
   }
   .information_user, .security_user{
     width: 100%;
