@@ -20,6 +20,7 @@ $("#send").click(function () {
     success: function (res) {
       console.log(res);
       if (res == "true") {
+        window.location.href = "./views/modules/productores.php";
         Swal.fire({
           icon: "success",
           title: "Bienvenido",

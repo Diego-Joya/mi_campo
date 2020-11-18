@@ -9,6 +9,7 @@ class Login
         if($res["perfil"] == $datos["perfil"] && $res["usuario"] == $datos["usuario"]
          && $res["password"] == md5($datos["password"])){
              echo "true";
+            //  header('Location: ../views/modules/productores.php');
          } 
     }
 }
