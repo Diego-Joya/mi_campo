@@ -37,6 +37,7 @@ $("#register").click(function () {
             showConfirmButton: false,
             timer: 1500,
           });
+          cleanFields(datos);
         } else {
           Swal.fire({
             icon: "error",
@@ -121,17 +122,60 @@ function validateFields(fields, callback) {
   fields.forEach(function (f) {
     if (f.value.length == 0 && f.value != "function") {
       count++;
-      var msg = document.createElement("span");
-      msg.innerHTML = "";
-      msg.style = "font-size: 25px; color: red;";
+      var msg = document.createElement("div");
+      msg.className = "msg";
+      msg.innerHTML = "Por favor completar todos los campos";
       $("#" + f.name).css("cssText", "border-color: red;");
-      $("#" + f.name).after(msg);
+      // $("#" + f.name).closest(".icon-input").after(msg);
+    } else {
+      var express = /^[a-zA-Z0-9]*$/;
+      var field = document.querySelector("." + f.name);
+      if (!express.test(f.value) && f.name != "email") {
+        count++;
+        if (field === null) {
+          var msg = document.createElement("div");
+          msg.className = "msg " + f.name;
+          msg.innerHTML = "No se permiten caracteres especiales<br><br>";
+          $("#" + f.name)
+            .closest(".icon-input")
+            .after(msg);
+        }
+      } else if (f.name != "function") {
+        if (field !== null) {
+          document.querySelector("." + f.name).remove();
+        }
+      }
     }
   });
 
   if (count > 0) {
     return;
-  }else{
+  } else {
     callback(true);
   }
+}
+
+$("#repeat_password").focusout(function (r) {
+  var pass = document.querySelector("#password").value;
+  var rep_pass = document.querySelector("#repeat_password").value;
+  if (pass != rep_pass) {
+    var msg = document.createElement("div");
+    msg.className = "msg";
+    msg.innerHTML = "Las contraseñas no son iguales";
+    $("#repeat_password").closest(".icon-input").after(msg);
+    document.querySelector("#password").value = "";
+    document.querySelector("#repeat_password").value = "";
+    // $("#repeat_password").after(msg);
+  }
+});
+$("#password").focus(function (e) {
+  $(".msg").remove();
+});
+
+function cleanFields(fields) {
+  fields.forEach(function (f) {
+    if (f.name != "function") {
+      document.querySelector("#" + f.name).value = "";
+    }
+  });
 }
