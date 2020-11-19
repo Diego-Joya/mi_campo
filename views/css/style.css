@@ -178,6 +178,116 @@ select{
   top: 101px;
   position: relative;
 }
+/*pag productores*/
+
+.contenedor3{
+  margin-top: 1110px;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+.lista{
+  margin-left: 15px;
+  width: 25%;
+  position: fixed;
+  
+
+}
+.vista{
+  margin-left: 31%;
+  margin-right: 15px;
+  width: 65%;
+  position: absolute;
+  border: #078930 solid 1px;
+  background: #eeeeee;
+}
+.vista h2{
+  text-align: center;
+    margin-bottom: 20px;
+    color: #078930;
+}
+
+.actualizar{
+  width: 100%;
+ 
+
+justify-content: center;
+text-align: center;
+}
+.actualizar input{
+  width: 60%;
+  margin: 10px;
+  padding: 6px;
+  
+}
+.actualizar label{
+  margin-top: 10px;
+  margin: 10px;
+}
+
+.puesto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center
+
+}
+.productos{
+  margin-top: 10px;
+  width: 60%;
+  height: 300px;
+  overflow: scroll;
+  text-align:center;
+  margin:auto;
+}
+.s{
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.actualizar input[type="button"]{
+  background: linear-gradient(#ffda63, #078930);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 0;
+  
+}
+
+.nav-or{
+  
+  position: absolute;
+  width: 100%;
+  transition: all 0.4s;
+  height: auto;
+  border: #078930 solid 1px;
+  background:#eee;
+  
+}
+.men-ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.munus{
+  display: block;
+  padding: 10px;
+  color: #078930;
+  background-color: #eeeeee;
+  text-decoration: none;
+  border-radius: 200px, 100px, 100px, 100px;
+}
+.munus:hover{
+  background: #078930;
+  color: #eee;
+}
+.lis{
+  list-style: none;
+  
+}
+
 
 @media (min-width: 1024px) {
   .register {
