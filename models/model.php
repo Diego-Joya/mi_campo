@@ -15,8 +15,8 @@
         else if( $enlacesmodel == "inicio"){ 
             $module = "views/modules/inicio.php";
         }
-        else if( $enlacesmodel == "productores"){ 
-            $module = "views/modules/productores.php";
+        else if( $enlacesmodel == "administracion"){ 
+            $module = "views/administracion.php";
         }
         else if( $enlacesmodel == "fallo"){ 
             $module = "views/modules/login.php";

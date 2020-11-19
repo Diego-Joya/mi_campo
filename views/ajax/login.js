@@ -22,7 +22,7 @@ $("#send").click(function () {
       success: function (res) {
         console.log(res);
         if (res == "true") {
-          window.location.href = "productores";
+          window.location.href = "administracion";
           Swal.fire({
             icon: "success",
             title: "Bienvenido",

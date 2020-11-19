@@ -4,7 +4,7 @@ class controller
 
     public function plantilla()
     {
-        if (isset($_GET["acction"]) && $_GET["acction"] == "productores") {
+        if (isset($_GET["acction"]) && $_GET["acction"] == "administracion") {
             $respuesta = enlacespaginas::enlacespaginasmodel($_GET["acction"]);
             include $respuesta;
         } else {
