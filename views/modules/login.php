@@ -1,6 +1,6 @@
 <div class="login">
     <h2>INGRESO A MI CAMPO</h2>
-    <form action="" id="login">
+    <form method="pots" action="" id="login">
         <label for="">Perfil</label><br>
         <div class="selec"><i class="material-icons">list</i>
             <select name="perfil" id="perfil" form="perfil" require>
@@ -13,5 +13,8 @@
         <input type="password" name="password" id="" placeholder="&#128272; escriba su contraseña" require><br><br>
         <input type="button" id="send" value="INGRESAR">
     </form>
+ 
 </div>
+
+
 <script src="views/ajax/login.js"></script>

@@ -16,4 +16,11 @@ class ValidateLogin extends connection
         $usr=$db->fetch();
         return $usr;
     }
+
+ 
+
+
+
+
+
 }

@@ -78,4 +78,13 @@ class Singup extends connection
             return "false";
         }
     }
+
+    public function entrarmodel($entrar, $tabla){
+        $db = connection::connect()->prepare("select * from $tabla where usuario=:usuario and perfil=:perfil");
+        $db->bindParam(":usuario", $p["usuario"], PDO::PARAM_STR);
+        $db->bindParam(":perfil", $p["perfil"], PDO::PARAM_INT);
+        $db->execute();
+        return fetch();
+
+    }
 }

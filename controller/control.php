@@ -18,8 +18,32 @@ public function enlacespaginascontroller(){
 
 }
 
+public function entrar(){
+    if(isset($_POST["perfil"])){
+                        $datoscontroller= array("perfil"=>$_POST["perfil"],
+                        "usuario"=>$_POST["usuario"],
+                        "password"=>$_POST["password"]  );}
+                        
+    $respu=Singup::entrarmodel($datoscontroller,"usuarios");
+    
+    if($respu["perfil"]==$_POST["perfil"]&&$respu["usuario"]==$_POST["usuario"]
+                        &&$respu["password"]==$_POST["password"]){
+                            header("location:productores.php");
+                        }
+                        else{
+                            header("location:fallo.php");
 
-
+                        }
+                        
+    }
+     
 }
+
+
+
+
+
+
+
 
 ?>
