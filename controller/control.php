@@ -4,7 +4,12 @@ class controller
 
     public function plantilla()
     {
-        include "views/plantilla.php";
+        if (isset($_GET["acction"]) && $_GET["acction"] == "productores") {
+            $respuesta = enlacespaginas::enlacespaginasmodel($_GET["acction"]);
+            include $respuesta;
+        } else {
+            include "views/plantilla.php";
+        }
     }
 
     public function enlacespaginascontroller()
