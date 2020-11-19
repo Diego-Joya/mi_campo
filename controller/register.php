@@ -17,19 +17,39 @@ class Register
         } else if ($datos["perfil"] == "3") {
             $tabla = "transportadores";
         }
-        $res = Singup::singup_users($datos, $tabla);
-        echo $res;
+        $validate = self::validateFields($datos);
+        if ($validate) {
+            $res = Singup::singup_users($datos, $tabla);
+            echo $res;
+        }
     }
-    public function loadProfiles($datos){
+    public function loadProfiles($datos)
+    {
         $res = Singup::loadProfiles($datos);
         echo $res;
     }
-    public function validateUsers($datos){
+    public function validateUsers($datos)
+    {
         $res = Singup::validateUsers($datos);
         echo $res;
     }
+    public function validateFields($datos)
+    {
+        $count = 0;
+        foreach ($datos as $d) {
+            if (!preg_match('/^[a-zA-Z0-9@]+$/', $d) && $datos["email"] != $d) {
+                $count++;
+                var_dump($d);
+            }
+        }
+        if ($count > 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
-$datos = $_POST;    
+$datos = $_POST;
 if (isset($datos["function"]) && $datos["function"] == "controlRegister") {
     $a = new Register();
     $a->controlRegister($datos);

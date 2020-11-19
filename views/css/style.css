@@ -77,6 +77,17 @@
   color: white;
   background-color: #078930;
 }
+.msg {
+  font-size: 14px;
+  background-color: #6fbb5e;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  display: inline;
+  background-color: #edc03f;
+}
+
+
 .register {
   width: 80%;
   max-width: 900px;
@@ -84,9 +95,11 @@
   margin: auto auto 100px;
   text-align: left;
   box-shadow: 5px;
-  background-color: #eee;
+  background-color: #fff;
   padding: 10px;
-  border: 1px solid #078930;  
+  border: 1px solid #078930;
+  -webkit-box-shadow: 2px 4px 11px 0px rgba(0,0,0,0.88); 
+  box-shadow: 2px 4px 11px 0px rgba(0,0,0,0.88);
 }
 
 .form_registro {
@@ -94,46 +107,61 @@
   width: 80%;
   margin: auto;
 }
-.information_user, .security_user{
-    width: 50%;
+.information_user,
+.security_user {
+  width: 50%;
 }
 .icon-input {
   display: flex;
   justify-content: flex-start;
-  margin: 10px 0;
+  margin-bottom: 10px;
   font-size: 20px;
 }
-.icon-input .icon{
+.icon-input .icon {
   margin: 0;
   padding: 0;
 }
-.icon-input .input{
-  margin: 10px 0;
+.icon-input .input {
   padding: 0;
   width: 100%;
 }
 .register form {
   display: block;
+  padding: 40px;
 }
 form i.material-icons {
   background: #6fbb5e;
   color: #fff;
   font-size: 30px;
 }
+form label{
+  margin-top: 10px;
+}
 .register form h1 {
   text-align: center;
   margin-bottom: 35px;
 }
-.register form input {
+.register form input, select {
   width: 70%;
   height: 30px;
   border-radius: 0px;
   padding: 10px;
+  border: 1px solid #6fbb5e;
+}
+.register form input:focus,select:focus  {
+  border-radius: 0px!important;
+  outline:none;
+}
+/* .register form select {
+  padding: 0;
+} */
+select{
+  padding: 0;
 }
 .register form input[type="button"] {
   margin-top: 20px;
   background: linear-gradient(#ffda63, #078930);
-    border: 0;
+  border: 0;
   font-weight: bold;
   color: #fff;
   font-size: 20px;
@@ -141,7 +169,7 @@ form i.material-icons {
   border-radius: 20px;
   padding: 5px;
 }
-.button_register{
+.button_register {
   margin: 0 auto;
   text-align: center;
 }
@@ -151,18 +179,19 @@ form i.material-icons {
   position: relative;
 }
 
-
 @media (min-width: 1024px) {
-  .register{
+  .register {
     display: block;
     width: 100%;
   }
-  .information_user, .security_user{
+  .information_user,
+  .security_user {
     width: 100%;
-}
+  }
 
-  .form_registro{
-    display: flex;}
+  .form_registro {
+    display: flex;
+  }
   .img-logo {
     margin-left: 80px;
   }

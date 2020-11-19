@@ -12,6 +12,7 @@ $("#send").click(function () {
     },
   ];
   datos = datos.concat(dat);
+<<<<<<< HEAD
   $.ajax({
     url: "controller/login.php",
     type: "POST",
@@ -39,5 +40,35 @@ $("#send").click(function () {
         });
       }
     },
+=======
+  validateFields(datos, function (callback) {
+    $.ajax({
+      url: "controller/login.php",
+      type: "POST",
+      data: datos,
+      cache: false,
+      success: function (res) {
+        console.log(res);
+        if (res == "true") {
+          window.location.href = "./views/modules/productores.php";
+          Swal.fire({
+            icon: "success",
+            title: "Bienvenido",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Error al ingresar clave o usuario invalida",
+            showConfirmButton: false,
+            footer: "",
+            timer: 1500,
+          });
+        }
+      },
+    });
+>>>>>>> 856105a96e51ef8c70abbdc2e22c545b7fd057e7
   });
 });
