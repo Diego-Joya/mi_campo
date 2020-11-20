@@ -38,7 +38,7 @@
             </thead>
             <tr>
                 <?php
-                $produ = new control();
+                $produ = new controller();
                 $produ->cultivoscontroller();
                 ?>
 
