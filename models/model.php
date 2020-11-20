@@ -49,7 +49,8 @@ class enlacespaginas extends connection
             $enlacesmode == "pag-transportadores" ||
             $enlacesmode == "pag-comerciantes" || $enlacesmode == "ver-productos" ||
             $enlacesmode == "ventas" || $enlacesmode == "ver-productos" ||
-            $enlacesmode == "comprar-productos"
+            $enlacesmode == "comprar-productos" ||
+            $enlacesmode == "pag-productores"
         ) {
             $modulo = "views/modules/" . $enlacesmode . ".php";
         } else if ($enlacesmode == "administracion.php") {
