@@ -57,6 +57,7 @@
     </div>
 </section>
 
+
     <script src="views/js/animaciones.js"></script>
 </body>
 

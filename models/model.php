@@ -30,6 +30,7 @@ class enlacespaginas extends connection
 
     public function enlacespaginascontroller()
     {
+
         if (isset($_GET["acction"])) {
             $enlacescontroller = $_GET["acction"];
         } else {
@@ -38,6 +39,7 @@ class enlacespaginas extends connection
         $respuesta = enlacespaginas::enlacespaginasmodel($enlacescontroller);
         include $respuesta;
     }
+
 
     // enlaces paginas administracion
 
