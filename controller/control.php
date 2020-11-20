@@ -41,21 +41,21 @@ class controller
         </tr>';
         }
     }
-
+ // navegacion pagina administracion
+ public function enlacesadministracioncontroller()
+ {
+     if (isset($_GET["action"])) {
+         $enlacescontroller = $_GET["action"];
+     } else {
+         $enlacescontroller = "administracion.php";
+     }
+     $respuesta = enlacespaginas::enlacesadministracionmodel($enlacescontroller);
+     include $respuesta;
+ }
 
 
 }
 
 
-    // navegacion pagina administracion
-    public function enlacesadministracioncontroller()
-    {
-        if (isset($_GET["action"])) {
-            $enlacescontroller = $_GET["action"];
-        } else {
-            $enlacescontroller = "administracion.php";
-        }
-        $respuesta = enlacespaginas::enlacesadministracionmodel($enlacescontroller);
-        include $respuesta;
-    }
-}
+   
+
