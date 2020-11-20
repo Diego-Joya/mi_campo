@@ -17,7 +17,12 @@ class ValidateLogin extends connection
         return $usr;
     }
 
- 
+ // llamar productos de la bbdd
+public function cultivosmodel($tabla){
+    $prod = connection::connect()->prepare("SELECT id_producto,nomb_producto,tipo_producto FROM $tabla");
+$prod->execute();
+return $prod ->fetchAll();
+}
 
 
 

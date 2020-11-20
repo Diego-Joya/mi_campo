@@ -26,7 +26,7 @@ class controller
     //llamar productos de la base de datos
 
     public function cultivoscontroller(){
-        $respuesta= cultivos::cultivosmodel("productos");
+        $respuesta= enlacespaginas::cultivosmodel("productos");
         foreach ($respuesta as $row => $item){
             echo'<tr>
             <td>'.$item["id_producto"].'</td>

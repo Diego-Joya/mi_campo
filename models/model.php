@@ -1,5 +1,6 @@
 <?php 
- class enlacespaginas{
+require_once "connection.php";
+ class enlacespaginas extends connection{
  public function enlacespaginasmodel($enlacesmodel){
      if($enlacesmodel== "contacto"||
         $enlacesmodel == "login"||
@@ -57,12 +58,14 @@
     return $modulo;
 }
 
-// llamar productos de la bbdd
-public function cultivosmodel($tabla){
+
+ // llamar productos de la bbdd
+ public function cultivosmodel($tabla){
     $prod = connection::connect()->prepare("SELECT id_producto,nomb_producto,tipo_producto FROM $tabla");
 $prod->execute();
 return $prod ->fetchAll();
 }
+
 
  }
 

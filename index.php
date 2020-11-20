@@ -6,6 +6,7 @@
 require_once "controller/control.php";
 require_once "models/model.php";
 
+
 $mvc = new controller();
 $mvc->plantilla();
 
