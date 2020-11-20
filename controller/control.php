@@ -5,7 +5,11 @@ class controller
     public function plantilla()
     {
         if (isset($_GET["acction"]) && $_GET["acction"] == "administracion" || isset($_GET["action"])) {
-            include "views/administracion.php";
+            // include "views/administracion.php";
+            $enlace = "administracion";
+            $respuesta = enlacespaginas::enlacespaginasmodel($enlace);
+            include $respuesta;
+        
         } else {
             include "views/plantilla.php";
         }
