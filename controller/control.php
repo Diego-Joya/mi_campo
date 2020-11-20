@@ -37,6 +37,12 @@ class controller
         </tr>';
         }
     }
+
+
+
+}
+
+
     // navegacion pagina administracion
     public function enlacesadministracioncontroller()
     {
