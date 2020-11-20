@@ -36,13 +36,13 @@
         <div class="lista">
             <nav class="nav-or">
                 <ul class="men-ul">
-                    <li class="lis"><a class="munus" href="index.php?action=per_productores.php">Perfil productor</a></li>
-                    <li class="lis"><a class="munus" href="index.php?action=transportadores.php">Perfil transportador</a></li>
-                    <li class="lis"><a class="munus" href="">Perfil comercinate</a></li>
-                    <li class="lis"><a class="munus" href="">productos</a></li>
-                    <li class="lis"><a class="munus" href="">ventas</a></li>
-                    <li class="lis"><a class="munus" href="">ver productos</a></li>
-                    <li class="lis"><a class="munus" href="">comprar productos</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=pag-productores">Perfil productor</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=pag-transportadores">Perfil transportador</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=pag-comerciantes">Perfil comercinate</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=ver-productos"> ver productos</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=ventas">ventas</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=ver-productos">ver productos</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=comprar-productos">comprar productos</a></li>
                     <li class="lis"><a class="munus" href="">ver viajes</a></li>
                 </ul>
             </nav>
@@ -51,7 +51,7 @@
         <div class="vista">
             <?php
                 $mvc= new controller();
-                // $mvc -> enlaces(); 
+                 $mvc -> enlacesadministracioncontroller(); 
             ?>
         </div>
     </div>

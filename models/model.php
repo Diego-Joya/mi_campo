@@ -28,9 +28,41 @@
      
      return$module;
  }
- 
 
+ public function enlacespaginascontroller()
+ {
+     if (isset($_GET["acction"])) {
+         $enlacescontroller = $_GET["acction"];
+     } else {
+         $enlacescontroller = "index.php";
+     }
+     $respuesta = enlacespaginas::enlacespaginasmodel($enlacescontroller);
+     include $respuesta;
+ }
 
+ // enlaces paginas administracion
+
+   public function enlacesadministracionmodel($enlacesmode)
+    {
+        if ( $enlacesmode=="pag-transportadores"||
+                 $enlacesmode=="pag-comerciantes"|| $enlacesmode == "ver-productos"|| 
+                 $enlacesmode== "ventas"|| $enlacesmode=="ver-productos"|| 
+                 $enlacesmode=="comprar-productos") {
+                     $modulo= "views/modules/".$enlacesmode.".php";
+       
+    }
+    else if($enlacesmode== "administracion.php"){
+        $modulo= "views/modules/pag-productores.php";
+    }
+    return $modulo;
+}
+
+// llamar productos de la bbdd
+public function cultivosmodel($tabla){
+    $prod = connection::connect()->prepare("SELECT id_producto,nomb_producto,tipo_producto FROM $tabla");
+$prod->execute();
+return $prod ->fetchAll();
+}
 
  }
 
