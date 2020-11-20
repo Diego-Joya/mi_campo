@@ -41,7 +41,7 @@ class controller
 // navegacion pagina administracion
     public function enlacesadministracioncontroller()
     {
-        if (isset($_GET["acction"])) {
+        if (isset($_GET["action"])) {
             $enlacescontroller = $_GET["action"];
         } else {
             $enlacescontroller = "administracion.php";
