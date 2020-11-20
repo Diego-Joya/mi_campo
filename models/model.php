@@ -49,13 +49,17 @@ require_once "connection.php";
                  $enlacesmode=="pag-comerciantes"|| $enlacesmode == "ver-productos"|| 
                  $enlacesmode== "ventas"|| $enlacesmode=="ver-productos"|| 
                  $enlacesmode=="comprar-productos") {
-                     $modulo= "views/modules/".$enlacesmode.".php";
+                     $modul= "views/modules/".$enlacesmode.".php";
        
     }
     else if($enlacesmode== "administracion.php"){
-        $modulo= "views/modules/pag-productores.php";
+        $modul= "views/modules/pag-productores.php";
     }
-    return $modulo;
+    else{
+        $modul= "views/modules/pag-productores.php";
+    }
+    
+    return $modul;
 }
 
 
