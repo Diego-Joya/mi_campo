@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Un paso al progreso</title>
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/footer.css">
     <link rel="stylesheet" href="views/css/fontello.css">
@@ -43,7 +43,8 @@
                     <li class="lis"><a class="munus" href="index.php?action=ventas">ventas</a></li>
                     <li class="lis"><a class="munus" href="index.php?action=ver-productos">ver productos</a></li>
                     <li class="lis"><a class="munus" href="index.php?action=comprar-productos">comprar productos</a></li>
-                    <li class="lis"><a class="munus" href="">ver viajes</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=viajes">ver viajes</a></li>
+                    <li class="lis"><a class="munus" href="index.php?action=siembras">siembras</a></li>
                 </ul>
             </nav>
 

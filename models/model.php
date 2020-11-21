@@ -50,6 +50,9 @@ class enlacespaginas extends connection
             $enlacesmode == "pag-comerciantes" || $enlacesmode == "ver-productos" ||
             $enlacesmode == "ventas" || $enlacesmode == "ver-productos" ||
             $enlacesmode == "comprar-productos" ||
+            $enlacesmode == "siembras" ||
+            $enlacesmode == "viajes" ||
+
             $enlacesmode == "pag-productores"
         ) {
             $modulo = "views/modules/" . $enlacesmode . ".php";

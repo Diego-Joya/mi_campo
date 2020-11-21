@@ -8,7 +8,7 @@
                 <input type="password" name="password" id="" placeholder="" require><br><br>
                 <label for="">telefono de contacto</label><br>
                 <input type="number" name="telefono" placeholder="escriba su numero de celular" maxlength="10"requiere><br><br>
-               <div class="puesto"><label for="">capacidad del vehiculo </label> <br>
+               <div class="puesto"><label for="">capacidad del <br> vehiculo </label> <br>
                 <select class="s" name="" id="">
                     <option value="">seleccione</option>
                     <option value="">3 toneladas</option>
@@ -31,6 +31,7 @@
                         ?>
                 
                     </select> <br>
+                </div>
                     <div class="puesto"><label for="">Municipio </label> <br>
                     <select class="s" name="" id="">
                        
@@ -40,5 +41,6 @@
                         ?>
                 
                     </select> <br>
+                    </div>
                 <input type="button" name="guardar" value="GUARDAR">
             </form>

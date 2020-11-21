@@ -192,6 +192,7 @@ select{
 .lista{
   margin-left: 15px;
   width: 25%;
+  height: 100hv;
   position: fixed;
   
 
@@ -200,6 +201,7 @@ select{
   margin-left: 31%;
   margin-right: 15px;
   width: 65%;
+  height: auto;
   position: absolute;
   border: #078930 solid 1px;
   background: #eeeeee;
@@ -212,27 +214,24 @@ select{
 
 .actualizar{
   width: 100%;
- 
-
-justify-content: center;
-text-align: center;
+text-align: left;
 }
 .actualizar input{
   width: 60%;
   margin: 10px;
   padding: 10px;
-  
+  margin-left: 100px;
 }
 .actualizar label{
-  margin-top: 10px;
-  margin: 10px;
+  width: 100%;
+  margin-left: 100px;
 }
 
 .puesto{
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
-  justify-content:center
+  justify-content:space-around;
 
 }
 .productos{
@@ -240,10 +239,11 @@ text-align: center;
   width: 60%;
   height: 300px;
   overflow: scroll;
-  text-align:center;
+  text-align:left;
   margin:auto;
 }
 .s{
+  margin-top: -20px;
   width: 20%;
   height: 30px;
   border-radius: 0px;
@@ -251,6 +251,7 @@ text-align: center;
   border: 1px solid #6fbb5e;
 }
 .actualizar input[type="button"]{
+  margin-left: 35%;
   background: linear-gradient(#ffda63, #078930);
   border: 0;
   color: white;
@@ -292,6 +293,18 @@ text-align: center;
   list-style: none;
   
 }
+.justify{
+  margin-top: 10px;
+  
+}
+.tabl{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tabl input{
+  text-align: center;
+margin-left: 0;}
 
 
 @media (min-width: 1024px) {
