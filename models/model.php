@@ -67,6 +67,20 @@ class enlacespaginas extends connection
         $prod->execute();
         return $prod->fetchAll();
     }
+    // llamar departamentos
+    public function departamentosmodel($tabla){
+        $departamento= connection::connect()->prepare("SELECT name FROM $tabla order by name asc");
+        $departamento->execute();
+        return $departamento->fetchAll();
+    }
+
+    //llamar municipios
+
+    public function municipiosmodel($tabla){
+        $municipio = connection::connect()->prepare ("SELECT name FROM $tabla order by name asc");
+        $municipio->execute();
+        return $municipio->fetchAll();
+    }
  
 
 }

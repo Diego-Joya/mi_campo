@@ -14,6 +14,7 @@ class controller
             include "views/plantilla.php";
         }
     }
+    
 
     public function enlacespaginascontroller()
     {
@@ -41,6 +42,24 @@ class controller
         </tr>';
         }
     }
+    //llamar departamentos
+    public function departamentoscontroller(){
+        $resp= enlacespaginas::departamentosmodel("departaments");
+        foreach ($resp as $row =>$item){
+            echo '<option value="">' .$item["name"]. '</option>';
+        }
+    }
+
+    // llamar municipios
+
+    public function municipioscontroller(){
+        $resp= enlacespaginas::municipiosmodel("citys");
+        foreach ($resp as $row => $item){
+            echo '<option value="">'.$item["name"].'</option>';
+        }
+    }
+
+    
  // navegacion pagina administracion
  public function enlacesadministracioncontroller()
  {
@@ -52,6 +71,7 @@ class controller
      $respuesta = enlacespaginas::enlacesadministracionmodel($enlacescontroller);
      include $respuesta;
  }
+
 
 
 }

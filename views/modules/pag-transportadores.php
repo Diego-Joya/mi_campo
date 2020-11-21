@@ -22,9 +22,18 @@
             </div>
             <label for="">placas del vehiculo</label><br>
             <input type="text" name="placas" id="" placeholder="escriba las placas de su vehiculo" require><br><br>
-                <div class="puesto"><label for="">municipio </label> <br>
+                <div class="puesto"><label for="">Departamento </label> <br>
                     <select class="s" name="" id="">
-                        <option value="">seleccione</option>
+                       
+                        <?php
+                        $produ = new controller();
+                        $produ->departamentoscontroller();
+                        ?>
+                
+                    </select> <br>
+                    <div class="puesto"><label for="">Municipio </label> <br>
+                    <select class="s" name="" id="">
+                       
                         <?php
                         $produ = new controller();
                         $produ->municipioscontroller();
