@@ -1,5 +1,5 @@
 <h1>AGREGUE PRODUCTOS A VENDER</h1>
-<div class="productos">
+
                     <table class="tabl" border="1px">
                         <thead>
                             <tr>

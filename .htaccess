@@ -6,3 +6,4 @@ Options All -indexes
 # activar RewriteEngine
 RewriteEngine on
 RewriteRule ^(\w+)$ index.php?acction=$1
+

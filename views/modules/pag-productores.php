@@ -2,13 +2,13 @@
     <h2>PERFIL DE USUARIO</h2>
     <form class="actualizar" action="">
         <label for="">nombre</label><br>
-        <input type="text" name="nombre" id="" placeholder="" require><br><br>
+        <input type="text" name="nombre" id="" placeholder="escriba su nombre" require><br><br>
         <label for="">apellido</label><br>
-        <input type="text" name="usuario" id="" placeholder="" require><br><br>
+        <input type="text" name="usuario" id="" placeholder="escriba su contraseña" require><br><br>
         <label for="">Contraseña</label><br>
-        <input type="password" name="password" id="" placeholder="" require><br><br>
+        <input type="password" name="password" id="" placeholder="escriba la contraseña con la que se registro" require><br><br>
         <label for="">nombre de la finca</label><br>
-        <input type="text" name="finca" id="" placeholder="" require><br><br>
+        <input type="text" name="finca" id="" placeholder="escriba el nombre de la finca" require><br><br>
         <div class="puesto"><label for="">clima</label> <br>
             <select class="s" name="" id="">
                 <option value="">seleccione</option>

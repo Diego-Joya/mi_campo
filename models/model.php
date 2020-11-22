@@ -52,6 +52,7 @@ class enlacespaginas extends connection
             $enlacesmode == "comprar-productos" ||
             $enlacesmode == "siembras" ||
             $enlacesmode == "viajes" ||
+            $enlacesmode == "contraseña" ||
 
             $enlacesmode == "pag-productores"
         ) {
