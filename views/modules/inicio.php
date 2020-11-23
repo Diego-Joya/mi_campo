@@ -1,6 +1,6 @@
 
     <section id="banner">
-          <img src="views/imagenes/inicio.jpg" alt="">
+          <img src="views/imagenes/f-inicio (2).jpg" alt="">
           <div class="contenedor">
           <h1>BIENVENIDOS A MI CAMPO</h1> 
          

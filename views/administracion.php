@@ -41,7 +41,6 @@
                     <li class="lis"><a class="munus" href="index.php?action=pag-comerciantes">Perfil comercinate</a></li>
                     <li class="lis"><a class="munus" href="index.php?action=ver-productos"> ver productos</a></li>
                     <li class="lis"><a class="munus" href="index.php?action=ventas">ventas</a></li>
-                    <li class="lis"><a class="munus" href="index.php?action=ver-productos">ver productos</a></li>
                     <li class="lis"><a class="munus" href="index.php?action=comprar-productos">comprar productos</a></li>
                     <li class="lis"><a class="munus" href="index.php?action=viajes">ver viajes</a></li>
                     <li class="lis"><a class="munus" href="index.php?action=siembras">siembras</a></li>

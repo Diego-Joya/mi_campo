@@ -9,7 +9,13 @@
 </div>
 </div>
 <section>
-    <p>Somos un grupo de campesinos, comerciantes y transportadores en búsqueda de un comercio mas justo y competitivo con igualdad de condiciones para todos.
-A través de esta plataforma se busca beneficiar tanto a campesinos como a comerciantes, ya que ellos tendrán un mayor facilidad para poder vender sus productos sin necesidad de intermediarios y los comerciantes podrán surtir sus negocios comprando directamente a los campesinos.
-</p>
+<article class="contenerdor2">
+    <p>Mi campo es una plataforma que busca ayudar a campesinos a vender con mayor facilidad y que comerciantes puedan conseguir productos para surtir su negocio.
+     </p>
+     <p>buscamos devolver las esperanzas en el campo, hacer que la poblacion vuelva hacia los campos y  vean ganancias</p>
+
+     <h3 class="subtitulos">¿ERES COMERCIANTES?</h3>
+     <P>Si usted es dueño de un negocio en el cual vende produtos del campo esta plataforma es para ti. Aca podras consegirlos de una manera mas rapida y apoyando directamnete a los campesinos... usted hara parte de este gran cambio.</P>
+    
+    </article>
 </section>
