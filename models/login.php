@@ -1,5 +1,6 @@
 <?php
 require '../models/connection.php';
+require '../models/_sessiones.php';
 
 class ValidateLogin extends connection
 {
@@ -13,19 +14,23 @@ class ValidateLogin extends connection
             return "false";
         }
 
-        $usr=$db->fetch();
-        return $usr;
+        $usr = $db->fetch();
+        if($usr["perfil"] == $p["perfil"] && $usr["usuario"] == $p["usuario_login"]
+        && $usr["password"] == md5($p["password"])){
+            $r = session::initSession($usr);
+            if($r){
+                return "true";
+            }
+            return "false";
+        } 
+
     }
 
- // llamar productos de la bbdd
-public function cultivosmodel($tabla){
-    $prod = connection::connect()->prepare("SELECT id_producto,nomb_producto,tipo_producto FROM $tabla");
-$prod->execute();
-return $prod ->fetchAll();
-}
-
-
-
-
-
+    // llamar productos de la bbdd
+    public function cultivosmodel($tabla)
+    {
+        $prod = connection::connect()->prepare("SELECT id_producto,nomb_producto,tipo_producto FROM $tabla");
+        $prod->execute();
+        return $prod->fetchAll();
+    }
 }
