@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["usuario"])) {
+    header("Location: administracion");
+}
+?>
 <div class="register">
     <form id="registro" action="" method="POST" onsubmit="validarre">
         <h1>Registrese</h1>
