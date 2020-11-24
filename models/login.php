@@ -33,4 +33,5 @@ class ValidateLogin extends connection
         $prod->execute();
         return $prod->fetchAll();
     }
+    
 }

@@ -30,7 +30,7 @@ if (!isset($_SESSION["usuario"])) {
                     <li class="menu-lis"><a class="menu-link" href="index.php">Notificacion</a></li>
                     <li class="menu-lis"><a class="menu-link" href="somos">produccion</a></li>
                     <li class="menu-lis"><a class="menu-link" href="contacto">porcentaje produccion</a></li>
-                    <li class="menu-lis" id="close">salir</li>
+                    <li class="menu-lis" id="close"><i class="material-icons">power_settings_new</i>salir</li>
                 </ul>
             </nav>
         </div>

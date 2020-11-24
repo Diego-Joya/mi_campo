@@ -8,9 +8,13 @@ class Login
         $res = ValidateLogin::validateEntry($datos);
         echo $res;
     }
+    
 }
 $datos = $_POST;
 if (isset($datos["function"]) && $datos["function"] == "validateEntry") {
     $a = new Login();
     $a->validateEntry($datos);
+} else {
+    session_destroy();
+    return true;
 }
