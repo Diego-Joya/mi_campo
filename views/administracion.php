@@ -53,7 +53,7 @@ if (!isset($_SESSION["usuario"])) {
                             ?>
                                 <li class="lis"><a class="munus" href="index.php?action=pag-transportadores">Perfil transportador</a></li>
                             <?php
-                            } else if ($_SESSION["perfil"] == 2) {
+                            } else if ($_SESSION["perfil"] == 3) {
                             ?>
                                 <li class="lis"><a class="munus" href="index.php?action=pag-comerciantes">Perfil comercinate</a></li>
                             <?php
