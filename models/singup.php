@@ -45,6 +45,7 @@ class Singup extends connection
         $db->bindParam(":email", $datos["email"], PDO::PARAM_STR);
         $db->bindParam(":id_usuario", $usr["id"], PDO::PARAM_INT);
         if (!$db->execute()) {
+            // var_dump($db->debugDumpParams());
             var_dump($db->errorInfo());
             return "false";
         }
