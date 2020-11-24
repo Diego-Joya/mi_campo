@@ -30,14 +30,12 @@ if (!isset($_SESSION["usuario"])) {
                     <li class="menu-lis"><a class="menu-link" href="index.php">Notificacion</a></li>
                     <li class="menu-lis"><a class="menu-link" href="somos">produccion</a></li>
                     <li class="menu-lis"><a class="menu-link" href="contacto">porcentaje produccion</a></li>
-                    <li class="menu-lis"><a class="menu-link" href="services">salir</a></li>
-
+                    <li class="menu-lis" id="close">salir</li>
                 </ul>
             </nav>
         </div>
 
     </div>
-
     <section class="cuerpo">
         <section>
             <div class="contendenor3">
@@ -79,6 +77,6 @@ if (!isset($_SESSION["usuario"])) {
 
 
         <script src="views/js/animaciones.js"></script>
+        <script src="views/js/index.js"></script>
 </body>
-
 </html>
