@@ -1,4 +1,5 @@
-<div class="login"><h2>Cambiar contraseña</h2>
+<div class="password"><h2>Cambiar contraseña</h2>
+
 <form action="" id="">
         <label for="">Escriba su contraseña</label>
         <div class="icon-input">
@@ -16,4 +17,5 @@
         </div>
         <input type="button" id="send" value="CAMBIAR">
     </form>
+
 </div>

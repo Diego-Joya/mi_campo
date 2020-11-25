@@ -13,9 +13,9 @@ class Register
         if ($datos["perfil"] == "1") {
             $tabla = "productores";
         } else if ($datos["perfil"] == "2") {
-            $tabla = "clientes";
-        } else if ($datos["perfil"] == "3") {
             $tabla = "transportadores";
+        } else if ($datos["perfil"] == "3") {
+            $tabla = "clientes";
         }
         $validate = self::validateFields($datos);
         if ($validate) {

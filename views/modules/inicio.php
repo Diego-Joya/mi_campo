@@ -1,4 +1,9 @@
-
+<?php
+session_start();
+if (isset($_SESSION["usuario"])) {
+    header("Location: administracion");
+}
+?>
     <section id="banner">
           <img src="views/imagenes/f-inicio (2).jpg" alt="">
           <div class="contenedor">

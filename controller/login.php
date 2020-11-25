@@ -6,15 +6,15 @@ class Login
     public function validateEntry($datos)
     {
         $res = ValidateLogin::validateEntry($datos);
-        if($res["perfil"] == $datos["perfil"] && $res["usuario"] == $datos["usuario_login"]
-         && $res["password"] == md5($datos["password"])){
-             echo "true";
-            //  header('Location: ../views/modules/productores.php');
-         } 
+        echo $res;
     }
+    
 }
 $datos = $_POST;
 if (isset($datos["function"]) && $datos["function"] == "validateEntry") {
     $a = new Login();
     $a->validateEntry($datos);
+} else {
+    session_destroy();
+    return true;
 }

@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["usuario"])) {
+    header("Location: administracion");
+}
+?>
 <div class="login">
     <h2>INGRESO A MI CAMPO</h2>
 

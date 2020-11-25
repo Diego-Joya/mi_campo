@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["usuario"])) {
+    header("Location: administracion");
+}
+?>
 <div class="banner"> <div class="slaider">
     <ul>
         <li><img class="tamaño" src="views/imagenes/servicios.jpg" alt=""></li>
