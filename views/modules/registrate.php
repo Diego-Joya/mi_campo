@@ -9,9 +9,7 @@ if (isset($_SESSION["usuario"])) {
         <h1>Registrese</h1>
         <div class="form_registro">
             <div class="information_user">
-
                 <label for="">Nombres</label>
-
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">person</i></div>
                     <input type="text" name="nombres" id="nombres" placeholder="Nombres" required>

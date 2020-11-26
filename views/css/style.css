@@ -9,6 +9,9 @@
 :root {
   --color-header: #078930;
 }
+th{
+  text-transform: uppercase;
+}
 
 .header {
   position: fixed;
@@ -107,6 +110,11 @@
   width: 80%;
   margin: auto;
 }
+.form_productos {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
 .information_user,
 .security_user {
   width: 50%;
@@ -125,7 +133,7 @@
   padding: 0;
   width: 100%;
 }
-.register form {
+form {
   display: block;
   padding: 40px;
 }
@@ -137,11 +145,11 @@ form i.material-icons {
 form label {
   margin-top: 10px;
 }
-.register form h1 {
+form h1 {
   text-align: center;
   margin-bottom: 35px;
 }
-.register form input,
+form input,
 select {
   width: 70%;
   height: 30px;
@@ -149,7 +157,7 @@ select {
   padding: 10px;
   border: 1px solid #6fbb5e;
 }
-.register form input:focus,
+form input:focus,
 select:focus {
   border-radius: 0px !important;
   outline: none;
@@ -160,7 +168,7 @@ select:focus {
 select {
   padding: 0;
 }
-.register form input[type="button"] {
+form input[type="button"] {
   margin-top: 20px;
   background: linear-gradient(#ffda63, #078930);
   border: 0;
@@ -208,9 +216,19 @@ select {
   background: #eeeeee;
 }
 .vista h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
+  margin-left: 10%;
   color: #078930;
+}
+.button_scurity {
+  width: 80%;
+  margin-left: 0%;
+  text-align: center;
+}
+.button_scurity input {
+  width: 60%;
+  margin: auto;
 }
 
 .actualizar {
@@ -236,11 +254,14 @@ select {
 }
 .productos {
   margin-top: 10px;
-  width: 90%;
+  width: 40%;
   height: 300px;
   overflow: scroll;
   text-align: left;
   margin: auto;
+}
+.register_productos{
+  width: 45%;
 }
 .s {
   margin-top: -20px;
@@ -290,8 +311,16 @@ select {
   list-style: none;
 }
 .justify {
-  margin-top: 10px;
+  width: 80%;
+  max-width: 900px;
+  height: auto;
+  margin: auto auto 100px;
+  text-align: left;
+  box-shadow: 5px;
+  /* background-color: #fff; */
+  padding: 10px;
 }
+
 .tabl {
   margin-top: 10px;
   text-align: center;

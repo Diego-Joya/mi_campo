@@ -9,12 +9,11 @@ class controller
             $enlace = "administracion";
             $respuesta = enlacespaginas::enlacespaginasmodel($enlace);
             include $respuesta;
-        
         } else {
             include "views/plantilla.php";
         }
     }
-    
+
 
     public function enlacespaginascontroller()
     {
@@ -33,49 +32,47 @@ class controller
     {
         $respuesta = enlacespaginas::cultivosmodel("productos");
         foreach ($respuesta as $row => $item) {
-            echo '<tr>
-            <td>' . $item["id_producto"] . '</td>
-            <td>' . $item["nomb_producto"] . '</td>
-            <td>' . $item["tipo_producto"] . '</td> 
-            <td><input type="checkbox"></td>
-            <td><input type="text" name="cantidad"></td>
-        </tr>';
+            //     echo '<tr>
+            //     <td>' . $item["id_producto"] . '</td>
+            //     <td>' . $item["nomb_producto"] . '</td>
+            //     <td>' . $item["tipo_producto"] . '</td> 
+            //     <td><input type="checkbox"></td>
+            //     <td><input type="text" name="cantidad"></td>
+            // </tr>';
+            echo ' 
+            <option value="' . $item["id_producto"] . '">' . $item["nomb_producto"] . '</option>
+        ';
         }
     }
     //llamar departamentos
-    public function departamentoscontroller(){
-        $resp= enlacespaginas::departamentosmodel("departaments");
-        foreach ($resp as $row =>$item){
-            echo '<option value="">' .$item["name"]. '</option>';
+    public function departamentoscontroller()
+    {
+        $resp = enlacespaginas::departamentosmodel("departaments");
+        foreach ($resp as $row => $item) {
+            echo '<option value="">' . $item["name"] . '</option>';
         }
     }
 
     // llamar municipios
 
-    public function municipioscontroller(){
-        $resp= enlacespaginas::municipiosmodel("citys");
-        foreach ($resp as $row => $item){
-            echo '<option value="">'.$item["name"].'</option>';
+    public function municipioscontroller()
+    {
+        $resp = enlacespaginas::municipiosmodel("citys");
+        foreach ($resp as $row => $item) {
+            echo '<option value="">' . $item["name"] . '</option>';
         }
     }
 
-    
- // navegacion pagina administracion
- public function enlacesadministracioncontroller()
- {
-     if (isset($_GET["action"])) {
-         $enlacescontroller = $_GET["action"];
-     } else {
-         $enlacescontroller = "administracion.php";
-     }
-     $respuesta = enlacespaginas::enlacesadministracionmodel($enlacescontroller);
-     include $respuesta;
- }
 
-
-
+    // navegacion pagina administracion
+    public function enlacesadministracioncontroller()
+    {
+        if (isset($_GET["action"])) {
+            $enlacescontroller = $_GET["action"];
+        } else {
+            $enlacescontroller = "administracion.php";
+        }
+        $respuesta = enlacespaginas::enlacesadministracionmodel($enlacescontroller);
+        include $respuesta;
+    }
 }
-
-
-   
-

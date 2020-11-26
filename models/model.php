@@ -48,11 +48,12 @@ class enlacespaginas extends connection
         if (
             $enlacesmode == "pag-transportadores" ||
             $enlacesmode == "pag-comerciantes" || $enlacesmode == "ver-productos" ||
-            $enlacesmode == "ventas" || $enlacesmode == "ver-productos" ||
+            $enlacesmode == "ventas" || $enlacesmode == "productos" ||
             $enlacesmode == "comprar-productos" ||
             $enlacesmode == "siembras" ||
             $enlacesmode == "viajes" ||
-
+            $enlacesmode == "security_user" ||
+            $enlacesmode == "datos_user" ||
             $enlacesmode == "pag-productores"
         ) {
             $modulo = "views/modules/" . $enlacesmode . ".php";

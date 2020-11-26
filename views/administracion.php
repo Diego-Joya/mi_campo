@@ -14,12 +14,9 @@ if (!isset($_SESSION["usuario"])) {
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/footer.css">
     <link rel="stylesheet" href="views/css/fontello.css">
-
-
 </head>
 
 <body>
-
     <div class="header">
         <div class="contenedor">
             <img class="img-logo" src="views/imagenes/logo.jpeg" alt="">
@@ -34,7 +31,6 @@ if (!isset($_SESSION["usuario"])) {
                 </ul>
             </nav>
         </div>
-
     </div>
     <section class="cuerpo">
         <section>
@@ -42,22 +38,28 @@ if (!isset($_SESSION["usuario"])) {
                 <div class="lista">
                     <nav class="nav-or">
                         <ul class="men-ul">
+                            <li class="lis"><i class="material-icons">arrow_drop_down</i><a class="munus" href="">Perfil</a>
+                                <ul>
+                                    <li class="lis"><a class="munus" href="index.php?action=security_user">Seguridad</a></li>
+                                    <li class="lis"><a class="munus" href="index.php?action=datos_user">Datos</a></li>
+                                </ul>
+                            </li>
                             <?php
                             if ($_SESSION["perfil"] == 1) {
                             ?>
-                                <li class="lis"><a class="munus" href="index.php?action=pag-productores">Perfil productor</a></li>
-                            <?php
+                                <li class="lis"><a class="munus" href="index.php?action=pag-productores">Configuración</a>
+                                <?php
                             } else if ($_SESSION["perfil"] == 2) {
-                            ?>
-                                <li class="lis"><a class="munus" href="index.php?action=pag-transportadores">Perfil transportador</a></li>
+                                ?>
+                                <li class="lis"><a class="munus" href="index.php?action=pag-transportadores">Configuración</a></li>
                             <?php
                             } else if ($_SESSION["perfil"] == 3) {
                             ?>
-                                <li class="lis"><a class="munus" href="index.php?action=pag-comerciantes">Perfil comercinate</a></li>
+                                <li class="lis"><a class="munus" href="index.php?action=pag-comerciantes">Configuración</a></li>
                             <?php
                             }
                             ?>
-                            <li class="lis"><a class="munus" href="index.php?action=ver-productos"> ver productos</a></li>
+                            <li class="lis"><a class="munus" href="index.php?action=productos">Productos</a></li>
                             <li class="lis"><a class="munus" href="index.php?action=ventas">ventas</a></li>
                             <li class="lis"><a class="munus" href="index.php?action=comprar-productos">comprar productos</a></li>
                             <li class="lis"><a class="munus" href="index.php?action=viajes">ver viajes</a></li>
@@ -74,9 +76,8 @@ if (!isset($_SESSION["usuario"])) {
                 </div>
             </div>
         </section>
-
-
         <script src="views/js/animaciones.js"></script>
         <script src="views/js/index.js"></script>
 </body>
+
 </html>
