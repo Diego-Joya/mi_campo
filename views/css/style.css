@@ -342,7 +342,22 @@ button, input, li{
   text-align: center;
   width: 90%;
   margin: auto;
-  justify-content: space-around;
+  justify-content: space-between;
+  color: white;
+}
+
+.material-icons{
+  font-size: 20px;
+  background: #078930;
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 2px;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 8px;
 }
 @media (min-width: 1024px) {
   .register {
