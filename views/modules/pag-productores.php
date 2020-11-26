@@ -45,7 +45,7 @@
 
                 <label for="">productos que cultiva</label> <br>
                 <div class="productos">
-                    <table class="tabl" border="1px">
+                    <table class="tabl" border="1px" cellspacing="0" cellpadding="0">
                         <thead>
                             <tr>
                                 <th>id producto</th>

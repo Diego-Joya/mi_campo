@@ -88,7 +88,6 @@
   background-color: #edc03f;
 }
 
-
 .register {
   width: 80%;
   max-width: 900px;
@@ -99,8 +98,8 @@
   background-color: #fff;
   padding: 10px;
   border: 1px solid #078930;
-  -webkit-box-shadow: 2px 4px 11px 0px rgba(0,0,0,0.88); 
-  box-shadow: 2px 4px 11px 0px rgba(0,0,0,0.88);
+  -webkit-box-shadow: 2px 4px 11px 0px rgba(0, 0, 0, 0.88);
+  box-shadow: 2px 4px 11px 0px rgba(0, 0, 0, 0.88);
 }
 
 .form_registro {
@@ -135,28 +134,30 @@ form i.material-icons {
   color: #fff;
   font-size: 30px;
 }
-form label{
+form label {
   margin-top: 10px;
 }
 .register form h1 {
   text-align: center;
   margin-bottom: 35px;
 }
-.register form input, select {
+.register form input,
+select {
   width: 70%;
   height: 30px;
   border-radius: 0px;
   padding: 10px;
   border: 1px solid #6fbb5e;
 }
-.register form input:focus,select:focus  {
-  border-radius: 0px!important;
-  outline:none;
+.register form input:focus,
+select:focus {
+  border-radius: 0px !important;
+  outline: none;
 }
 /* .register form select {
   padding: 0;
 } */
-select{
+select {
   padding: 0;
 }
 .register form input[type="button"] {
@@ -181,7 +182,7 @@ select{
 }
 /*pag productores*/
 
-.contenedor3{
+.contenedor3 {
   margin-top: 1110px;
   display: flex;
   flex-wrap: wrap;
@@ -190,60 +191,63 @@ select{
   margin: auto;
   position: relative;
 }
-.lista{
-  margin-left: 15px;
-  width: 25%;
-  height: 100hv;
+.lista {
+  margin-left: 0px;
+  width: 18%;
+  min-height: 400px;
+  max-height: auto;
   position: fixed;
-  
-
 }
-.vista{
-  margin-left: 31%;
+.vista {
+  margin-left: 20%;
   margin-right: 15px;
+<<<<<<< HEAD
   width: 65%;
   min-height: 400px;
+=======
+  width: 80%;
+  height: auto;
+>>>>>>> 6e519b7830586b23cdcfca0194a9b0342b516f57
   position: absolute;
   border: #078930 solid 1px;
   background: #eeeeee;
 }
-.vista h2{
+.vista h2 {
   text-align: center;
-    margin-bottom: 20px;
-    color: #078930;
+  margin-bottom: 20px;
+  color: #078930;
 }
 
-.actualizar{
+.actualizar {
   width: 100%;
-text-align: left;
+  text-align: left;
 }
-.actualizar input{
+.actualizar input {
   width: 60%;
   margin: 10px;
   padding: 10px;
   margin-left: 100px;
 }
-.actualizar label{
+.actualizar label {
   width: 100%;
   margin-left: 100px;
 }
 
-.puesto{
+.puesto {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
-
+  justify-content: space-around;
 }
-.productos{
+.productos {
   margin-top: 10px;
-  width: 60%;
+  width: 90%;
   height: 300px;
   overflow: scroll;
-  text-align:left;
-  margin:auto;
+  text-align: left;
+  margin: auto;
 }
-.s{
+.s {
   margin-top: -20px;
   width: 20%;
   height: 30px;
@@ -251,7 +255,7 @@ text-align: left;
   padding: 0px;
   border: 1px solid #6fbb5e;
 }
-.actualizar input[type="button"]{
+.actualizar input[type="button"] {
   margin-left: 35%;
   background: linear-gradient(#ffda63, #078930);
   border: 0;
@@ -260,25 +264,22 @@ text-align: left;
   border-radius: 20px;
   margin-bottom: 0;
   width: 300px;
-  
 }
 
-.nav-or{
-  
+.nav-or {
   position: absolute;
   width: 100%;
   transition: all 0.4s;
-  height: auto;
+  height: 100%;
   border: #078930 solid 1px;
-  background:#eee;
-  
+  background: #eee;
 }
-.men-ul{
+.men-ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.munus{
+.munus {
   display: block;
   padding: 10px;
   color: #078930;
@@ -286,27 +287,34 @@ text-align: left;
   text-decoration: none;
   border-radius: 200px, 100px, 100px, 100px;
 }
-.munus:hover{
+.munus:hover {
   background: #078930;
   color: #eee;
 }
-.lis{
+.lis {
   list-style: none;
-  
 }
-.justify{
+.justify {
   margin-top: 10px;
-  
 }
-.tabl{
+.tabl {
   margin-top: 10px;
   text-align: center;
+  width: 100%;
+}
+.tabl td {
+  height: 25px;
 }
 
-.tabl input{
+.tabl input {
   text-align: center;
-margin-left: 0;}
-
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: none;
+}
 
 .close {
   top: 20vh;
@@ -320,17 +328,19 @@ margin-left: 0;}
   text-align: center;
   font-weight: bold;
 }
-.pupup{
+.pupup {
   z-index: 1000000;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
 }
-button, input, li{
+button,
+input,
+li {
   cursor: pointer;
 }
-.close .buttons button{
+.close .buttons button {
   margin: 5%;
   width: 40%;
   border: none;
@@ -338,7 +348,7 @@ button, input, li{
   background: #edc03f;
   font-weight: bold;
 }
-.close .buttons{
+.close .buttons {
   text-align: center;
   width: 90%;
   margin: auto;
