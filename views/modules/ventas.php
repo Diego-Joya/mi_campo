@@ -1,5 +1,9 @@
 <h1>AGREGUE PRODUCTOS A VENDER</h1>
-<div class="productos">
+<form action="">
+<input type="button" name="guardar" value="AGREGAR PRODUCTOS">
+</form>
+
+
                     <table class="tabl" border="1px">
                         <thead>
                             <tr>

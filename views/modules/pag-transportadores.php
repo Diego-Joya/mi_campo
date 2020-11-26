@@ -1,9 +1,11 @@
 <h2>ACTUALICES SUS DATOS COMO TRANSPORTADOR</h2>
             <form class="actualizar" action="">
                 <label for="">nombre del transportador</label><br>
+
                 <input type="text" name="nombre" id="" placeholder="escriba su nombre " require><br><br>
                 <label for="">apellido del transportador</label><br>
                 <input type="text" name="usuario" id="" placeholder="escriba su apellido" require><br><br>
+
                 <label for="">Contraseña</label><br>
                 <input type="password" name="password" id="" placeholder="escriba la contraseña con la que se registro" require><br><br>
                 <label for="">telefono de contacto</label><br>

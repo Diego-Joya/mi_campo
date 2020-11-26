@@ -20,7 +20,7 @@
                 $produ->departamentoscontroller();
                 ?>
 
-            </select> 
+            </select>
         </div>
         <div class="puesto"><label for="">Municipio </label>
             <select class="s" name="" id="">
@@ -33,7 +33,7 @@
             </select>
         </div>
         <label for="">productos que cultiva</label>
-        
+
         <div class="button_register">
             <input type="button" name="guardar" value="GUARDAR">
         </div>

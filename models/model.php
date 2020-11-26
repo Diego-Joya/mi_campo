@@ -54,6 +54,7 @@ class enlacespaginas extends connection
             $enlacesmode == "viajes" ||
             $enlacesmode == "security_user" ||
             $enlacesmode == "datos_user" ||
+
             $enlacesmode == "pag-productores"
         ) {
             $modulo = "views/modules/" . $enlacesmode . ".php";

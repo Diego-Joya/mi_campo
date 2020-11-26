@@ -38,6 +38,41 @@
     font-size: 20px;
 }
 
+/* cambiar contraseña*/
+ .password{
+     width: 60%;
+     height: auto;
+     border:1px solid #078930;
+     margin:auto;
+     text-align:left;
+     margin-top: 30px;
+     margin-bottom: 30px;
+     box-shadow: 4px 10px 10px -3px #078930;
+     
+ }
+
+ .password input{
+     width: 90%;
+     padding: 10px;
+     margin: 5px;
+ }
+ .password label{
+     margin: 5px;
+ }
+ .password input[type="button"]{
+    background: linear-gradient(#ffda63, #078930);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    
+}
+.password h2{
+    margin-top: 10px;
+}
+
+
 @media (max-width:480px){
     .login{
         width: 98%;
