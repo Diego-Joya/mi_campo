@@ -1,80 +1,83 @@
-.login{
-    margin-top: 10px;
-    margin: auto;
-    width: 50%;
-    max-width: 500px;
-    padding: 20px;
-    background-color: #eee;
-    border: 1px solid #078930;
+.login {
+  margin: auto;
+  width: 30%;
+  padding: 20px;
+  background-color: #eee;
+  border: 1px solid #078930;
+  height: auto;
+  margin: auto auto 100px;
+  text-align: left;
+  box-shadow: 5px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #078930;
+  -webkit-box-shadow: 2px 4px 11px 0px rgba(0, 0, 0, 0.88);
+  box-shadow: 2px 4px 11px 0px rgba(0, 0, 0, 0.88);
 }
-.login h2{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #078930;
+.login h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: #078930;
 }
-.login input{
-    display: block;
-    padding: 10px;
+.login input {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.login input[type="button"] {
+  background: linear-gradient(#ffda63, #078930);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+.selec {
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.login select#perfil {
     width: 100%;
-    margin: 10px 0;
-    font-size: 20px;
-
 }
-
-.login input[type="button"]{
-    background: linear-gradient(#ffda63, #078930);
-    border: 0;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-bottom: 0;
-    
-}
-.selec{
-    display: flex;
-    padding: 10px;
-    width: 100%;
-    margin: 10px 0;
-    font-size: 20px;
-}
-
 /* cambiar contraseña*/
- .password{
-     width: 60%;
-     height: auto;
-     border:1px solid #078930;
-     margin:auto;
-     text-align:left;
-     margin-top: 30px;
-     margin-bottom: 30px;
-     box-shadow: 4px 10px 10px -3px #078930;
-     
- }
-
- .password input{
-     width: 90%;
-     padding: 10px;
-     margin: 5px;
- }
- .password label{
-     margin: 5px;
- }
- .password input[type="button"]{
-    background: linear-gradient(#ffda63, #078930);
-    border: 0;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    
-}
-.password h2{
-    margin-top: 10px;
+.password {
+  width: 60%;
+  height: auto;
+  border: 1px solid #078930;
+  margin: auto;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 4px 10px 10px -3px #078930;
 }
 
+.password input {
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+}
+.password label {
+  margin: 5px;
+}
+.password input[type="button"] {
+  background: linear-gradient(#ffda63, #078930);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.password h2 {
+  margin-top: 10px;
+}
 
-@media (max-width:480px){
-    .login{
-        width: 98%;
-    }
+@media (max-width: 480px) {
+  .login {
+    width: 98%;
+  }
 }
