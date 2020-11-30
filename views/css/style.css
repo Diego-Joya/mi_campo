@@ -9,6 +9,9 @@
 :root {
   --color-header: #078930;
 }
+th{
+  text-transform: uppercase;
+}
 
 .header {
   position: fixed;
@@ -19,6 +22,7 @@
 }
 .contenedor {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .img-logo {
@@ -107,6 +111,11 @@
   width: 80%;
   margin: auto;
 }
+.form_productos {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
 .information_user,
 .security_user {
   width: 50%;
@@ -125,7 +134,7 @@
   padding: 0;
   width: 100%;
 }
-.register form {
+form {
   display: block;
   padding: 40px;
 }
@@ -137,11 +146,11 @@ form i.material-icons {
 form label {
   margin-top: 10px;
 }
-.register form h1 {
+form h1 {
   text-align: center;
   margin-bottom: 35px;
 }
-.register form input,
+form input,
 select {
   width: 70%;
   height: 30px;
@@ -149,7 +158,7 @@ select {
   padding: 10px;
   border: 1px solid #6fbb5e;
 }
-.register form input:focus,
+form input:focus,
 select:focus {
   border-radius: 0px !important;
   outline: none;
@@ -160,7 +169,7 @@ select:focus {
 select {
   padding: 0;
 }
-.register form input[type="button"] {
+form input[type="button"] {
   margin-top: 20px;
   background: linear-gradient(#ffda63, #078930);
   border: 0;
@@ -180,197 +189,30 @@ select {
   top: 101px;
   position: relative;
 }
-/*pag productores*/
-
-.contenedor3 {
-  margin-top: 1110px;
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  width: 90%;
-  margin: auto;
-  position: relative;
-}
-.lista {
-  margin-left: 0px;
-  width: 18%;
-  min-height: 400px;
-  max-height: auto;
+.head {
   position: fixed;
-}
-.vista {
-  margin-left: 20%;
-  margin-right: 15px;
-<<<<<<< HEAD
-  width: 65%;
-  min-height: 400px;
-=======
-  width: 80%;
-  height: auto;
->>>>>>> 6e519b7830586b23cdcfca0194a9b0342b516f57
-  position: absolute;
-  border: #078930 solid 1px;
-  background: #eeeeee;
-}
-.vista h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #078930;
-}
-
-.actualizar {
   width: 100%;
-  text-align: left;
-}
-.actualizar input {
-  width: 60%;
-  margin: 10px;
-  padding: 10px;
-  margin-left: 100px;
-}
-.actualizar label {
-  width: 100%;
-  margin-left: 100px;
-}
+  height: 100px;
+  background-color: white;
+  
 
-.puesto {
-  width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
-.productos {
-  margin-top: 10px;
-  width: 90%;
-  height: 300px;
-  overflow: scroll;
-  text-align: left;
-  margin: auto;
-}
-.s {
-  margin-top: -20px;
-  width: 20%;
-  height: 30px;
-  border-radius: 0px;
-  padding: 0px;
-  border: 1px solid #6fbb5e;
-}
-.actualizar input[type="button"] {
-  margin-left: 35%;
-  background: linear-gradient(#ffda63, #078930);
-  border: 0;
-  color: white;
-  cursor: pointer;
-  border-radius: 20px;
-  margin-bottom: 0;
-  width: 300px;
-}
-
-.nav-or {
-  position: absolute;
-  width: 100%;
-  transition: all 0.4s;
-  height: 100%;
-  border: #078930 solid 1px;
-  background: #eee;
-}
-.men-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.munus {
-  display: block;
-  padding: 10px;
-  color: #078930;
-  background-color: #eeeeee;
-  text-decoration: none;
-  border-radius: 200px, 100px, 100px, 100px;
-}
-.munus:hover {
-  background: #078930;
-  color: #eee;
-}
-.lis {
-  list-style: none;
-}
-.justify {
-  margin-top: 10px;
-}
-.tabl {
-  margin-top: 10px;
-  text-align: center;
-  width: 100%;
-}
-.tabl td {
-  height: 25px;
-}
-
-.tabl input {
-  text-align: center;
-  margin-left: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  border: none;
-}
-
-.close {
-  top: 20vh;
-  width: 30%;
-  height: 200px;
-  background: #7cbe91;
-  z-index: 100000000;
-  margin: auto;
-  position: relative;
-  padding: 50px 20px;
-  text-align: center;
-  font-weight: bold;
-}
-.pupup {
-  z-index: 1000000;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  position: fixed;
-}
-button,
-input,
-li {
-  cursor: pointer;
-}
-.close .buttons button {
-  margin: 5%;
-  width: 40%;
-  border: none;
-  height: 30px;
-  background: #edc03f;
-  font-weight: bold;
-}
-.close .buttons {
-  text-align: center;
-  width: 90%;
-  margin: auto;
-  justify-content: space-between;
-  color: white;
-}
-
-.material-icons{
-  font-size: 20px;
-  background: #078930;
-  color: white;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  line-height: 50px;
-  margin-left: 2px;
-  cursor: pointer;
-  margin: 15px;
-  border-radius: 8px;
+.contenedorbarra1{
+  margin-left: 10px;
+    margin-top: 30px;
+    width: 40%;
 }
 @media (min-width: 1024px) {
-  .register {
+
+  .head .nav{
+    margin-left: 30%;
+    
+    width: 70%;
+  }
+
+
+  .head .register {
+
     display: block;
     width: 100%;
   }

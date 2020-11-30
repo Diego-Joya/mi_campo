@@ -1,12 +1,6 @@
-<?php
-session_start();
-if (isset($_SESSION["usuario"])) {
-    header("Location: administracion");
-}
-?>
-<div class="register">
-    <form id="registro" action="" method="POST" onsubmit="validarre">
-        <h1>Registrese</h1>
+<div class="justify">
+    <form id="seguridad" action="" method="POST" onsubmit="validarre">
+        <h2>PERFIL DE USUARIO</h2>
         <div class="form_registro">
             <div class="information_user">
                 <label for="">Nombres</label>
@@ -51,36 +45,17 @@ if (isset($_SESSION["usuario"])) {
                 <label for="">Email</label>
                 <div class="icon-input">
                     <div class="icon"><i class="material-icons">mail</i></div>
-                    <input type="text" name="email" id="email" placeholder="Email"required>
-                </div>
-            </div>
-            <div class="security_user">
-                <label for="">Perfil</label>
-                <div class="icon-input">
-                    <div class="icon"><i class="material-icons">list</i></div>
-                    <select name="perfil" id="perfil" form="perfil" require>
-                        <option value="">Seleccione</option>
-                    </select>
-                </div>
-                <label for="">Usuario</label>
-                <div class="icon-input">
-                    <div class="icon"><i class="material-icons">account_circle</i></div>
-                    <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
-                </div>
-                <label for="">Contraseña</label>
-                <div class="icon-input">
-                    <div class="icon"><i class="material-icons">lock</i></div>
-                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
-                </div>
-                <label for="">Confirmar contraseña</label>
-                <div class="icon-input">
-                    <div class="icon"><i class="material-icons">lock</i></div>
-                    <input type="password" name="repeat_password" id="repeat_password" placeholder="Confirmar contraseña" required>
+                    <input type="text" name="email" id="email" placeholder="Email" required>
                 </div>
             </div>
         </div>
-        <div class="button_register">
+        <div class="button_scurity">
             <input type="button" id="register" value="Registrarme">
         </div>
     </form>
 </div>
+<script>
+    // document.addEventListener("DOMContentLoaded", function(event) {
+    //     editUser();
+    // });
+</script>
