@@ -15,24 +15,34 @@ if (!isset($_SESSION["usuario"])) {
     <link rel="stylesheet" href="views/css/footer.css">
     <link rel="stylesheet" href="views/css/fontello.css">
    <link rel="stylesheet" href="views/css/login.css">
+   <link rel="stylesheet" href="views/css/administracion.css">
         
 </head>
 
 <body>
-    <div class="header">
+    <div class="head">
         <div class="contenedor">
-            <img class="img-logo" src="views/imagenes/logo.jpeg" alt="">
+           
             <span class="icon-menu" id="btn-menu"></span>
 
-
+<div class="contenedorbarra">
             <nav class="nav" id="nav">
                 <ul class="menu-ul">
                     <li class="menu-lis"><a class="menu-link" href="index.php">Notificacion</a></li>
                     <li class="menu-lis"><a class="menu-link" href="somos">produccion</a></li>
                     <li class="menu-lis"><a class="menu-link" href="contacto">porcentaje produccion</a></li>
-                    <li class="menu-lis" id="close"><i class="material-icons">power_settings_new</i>salir</li>
-
+                  
+                </ul class="menu-ul">
+                </div>
+                    <form>
+                        <label for=""buscar></label>
+                        <input type="text" name="buscar">
+                    </form>
+                <div class="contenedorbarra2">
+                <ul>
+                <li class="menu-lis" id="close"><i class="material-icons">power_settings_new</i>salir</li>
                 </ul>
+                </div>
             </nav>
         </div>
     </div>
@@ -42,6 +52,7 @@ if (!isset($_SESSION["usuario"])) {
             <div class="contendenor3">
                 <div class="lista">
                     <nav class="nav-or">
+                    <img class="img-logo" src="views/imagenes/logo.jpeg" alt="">
                         <ul class="men-ul">
                             <li class="lis"><i class="material-icons">arrow_drop_down</i><a class="munus" href="">Perfil</a>
                                 <ul>
@@ -72,7 +83,7 @@ if (!isset($_SESSION["usuario"])) {
                             <li class="lis"><a class="munus" href="index.php?action=comprar-productos">comprar productos</a></li>
                             <li class="lis"><a class="munus" href="index.php?action=viajes">ver viajes</a></li>
                             <li class="lis"><a class="munus" href="index.php?action=siembras">siembras</a></li>
-                            <li class="lis"><a class="munus" href="index.php?action=contraseña">Cambiar contraseña</a></li>
+                          
                         </ul>
                     </nav>
 

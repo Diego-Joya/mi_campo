@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="button_scurity">
-            <input type="button" id="register" value="Registrarme">
+            <input type="button" id="register" value="Guardar">
         </div>
     </form>
 </div>
