@@ -34,10 +34,7 @@ if (!isset($_SESSION["usuario"])) {
                   
                 </ul class="menu-ul">
                 </div>
-                    <form>
-                        <label for=""buscar></label>
-                        <input type="text" name="buscar">
-                    </form>
+                   
                 <div class="contenedorbarra2">
                 <ul>
                 <li class="menu-lis" id="close"><i class="material-icons">power_settings_new</i>salir</li>
