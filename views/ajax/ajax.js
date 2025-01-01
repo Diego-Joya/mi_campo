@@ -1,3 +1,4 @@
+// alert("jajja si estoy cargando");
 $("#register").click(function () {
   var perfil = document.querySelector("#perfil").value;
   var tipo = document.querySelector("#tipo").value;
@@ -70,6 +71,7 @@ $("#perfil").ready(function (e) {
       if (res) {
         var select = document.querySelector("#perfil");
         var profiles = JSON.parse(res);
+        console.log("data perfiles", profiles);
         profiles.forEach(function (p) {
           var option = document.createElement("option");
           option.text = p.nombre;

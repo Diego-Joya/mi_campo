@@ -2,17 +2,22 @@
 require_once "connection.php";
 class enlacespaginas extends connection
 {
-    public function enlacespaginasmodel($enlacesmodel)
+    public static function enlacespaginasmodel($enlacesmodel)
     {
         if (
             $enlacesmodel == "contacto" ||
-            $enlacesmodel == "login" ||
+            // $enlacesmodel == "login" ||
+            $enlacesmodel == "administracion" ||
             $enlacesmodel == "registrate" ||
             $enlacesmodel == "services" ||
             $enlacesmodel == "somos"
         ) {
+            if ($enlacesmodel == "administracion") {
 
-            $module = "views/modules/" . $enlacesmodel . ".php";
+                $module = "views/" . $enlacesmodel . ".php";
+            } else {
+                $module = "views/modules/" . $enlacesmodel . ".php";
+            }
         } else if ($enlacesmodel == "index.php") {
             $module = "views/modules/inicio.php";
         } else if ($enlacesmodel == "inicio") {
@@ -43,7 +48,7 @@ class enlacespaginas extends connection
 
     // enlaces paginas administracion
 
-    public function enlacesadministracionmodel($enlacesmode)
+    public static function enlacesadministracionmodel($enlacesmode)
     {
         if (
             $enlacesmode == "pag-transportadores" ||
@@ -73,19 +78,19 @@ class enlacespaginas extends connection
         return $prod->fetchAll();
     }
     // llamar departamentos
-    public function departamentosmodel($tabla){
-        $departamento= connection::connect()->prepare("SELECT name FROM $tabla order by name asc");
+    public function departamentosmodel($tabla)
+    {
+        $departamento = connection::connect()->prepare("SELECT name FROM $tabla order by name asc");
         $departamento->execute();
         return $departamento->fetchAll();
     }
 
     //llamar municipios
 
-    public function municipiosmodel($tabla){
-        $municipio = connection::connect()->prepare ("SELECT name FROM $tabla order by name asc");
+    public function municipiosmodel($tabla)
+    {
+        $municipio = connection::connect()->prepare("SELECT name FROM $tabla order by name asc");
         $municipio->execute();
         return $municipio->fetchAll();
     }
- 
-
 }

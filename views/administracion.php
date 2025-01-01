@@ -1,8 +1,12 @@
 <?php
-session_start();
-if (!isset($_SESSION["usuario"])) {
-    header("Location: inicio");
-}
+// session_start();
+// if (!isset($_SESSION["usuario"])) {
+//     header("Location: inicio");
+// }
+
+$_SESSION["usuario"] = 'diegoj';
+$_SESSION["id"] = 1;
+$_SESSION["perfil"] =1;
 ?>
 <!DOCTYPE html>
 <html lang="en">

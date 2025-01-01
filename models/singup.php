@@ -61,6 +61,7 @@ class Singup extends connection
             return "false";
         }
         $res = $db->fetchAll();
+        echo 'console.log("valor de perfiles ",' . $res . ')';
         return json_encode($res);
     }
     public function validateUsers($p)
@@ -72,20 +73,19 @@ class Singup extends connection
             return "false";
         }
         $res = $db->fetch();
-        if (!empty($res)) { 
+        if (!empty($res)) {
             return json_encode($res);
-            
         } else {
             return "false";
         }
     }
 
-    public function entrarmodel($entrar, $tabla){
+    public function entrarmodel($p, $tabla)
+    {
         $db = connection::connect()->prepare("select * from $tabla where usuario=:usuario and perfil=:perfil");
         $db->bindParam(":usuario", $p["usuario"], PDO::PARAM_STR);
         $db->bindParam(":perfil", $p["perfil"], PDO::PARAM_INT);
         $db->execute();
-        return fetch();
-
+        return $db->fetch();
     }
 }

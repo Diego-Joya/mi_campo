@@ -11,7 +11,7 @@ if (isset($_SESSION["usuario"])) {
 
     </div>
 </section>
-<div class="contactenos">
+<div class="login">
     <h2>FORMULARIO DE CONTACTENOS</h2>
     <form action="">
         <label for="">NOMBRE Y APELLIDO</label> </br>
@@ -19,9 +19,9 @@ if (isset($_SESSION["usuario"])) {
         <label for="">CORRREO ELECTRONICO</label> </br>
         <input type="text" placeholder="escriba su correo electronico" require> </br>
         <label for="">mensaje</label> </br>
-        <textarea name="" id="" cols="60" rows="18"></textarea> </br>
+        <textarea  name="" id="" cols="40" rows="18"></textarea> </br>
 
-        <input type="submit" id="" value="enviar">
+        <input class="" type="button" id="" value="Enviar">
 
     </form>
 </div>
